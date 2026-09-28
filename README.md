@@ -8,7 +8,7 @@ Restaurant intelligence for a 25-location restaurant chain. The project takes a 
 - **Build log** (every step, decision and deviation): [`documentation/dev_log.md`](documentation/dev_log.md)
 - **Technical blog:** [`documentation/technical_blog.md`](documentation/technical_blog.md)
 - **Demo video script:** [`documentation/demo_video_script.md`](documentation/demo_video_script.md)
-- **Deployment:** local install (see below). No hosted URL yet.
+- **Deployment:**(https://dineiqdatascience.streamlit.app/)
 
 ## Login credentials (evaluators)
 
@@ -61,7 +61,7 @@ To change memory or partitions, edit `get_spark()`.
 ## 2. Install
 
 ```bash
-git clone https://github.com/MuzammilAsif/DineIQ-DataScience.git
+git clone https://github.com/MuzammilAsif/DineIQ_DataScience.git
 cd DineIQ-DataScience
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
