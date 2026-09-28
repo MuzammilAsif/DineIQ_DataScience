@@ -1,0 +1,20 @@
+{"promotion_id":"PROMO001","promotion_name":"New Year Kickoff","promotion_type":"PercentOff","discount_value":15.00,"start_date":"2025-01-01","end_date":"2025-01-10","min_order_value":1500.00}
+{"promotion_id":"PROMO002","promotion_name":"Winter Warmers","promotion_type":"PercentOff","discount_value":20.00,"start_date":"2025-01-11","end_date":"2025-02-15"}
+{"promotion_id":"PROMO003","promotion_name":"Valentine Dinner Combo","promotion_type":"ComboDeal","discount_value":20.00,"start_date":"2025-02-10","end_date":"2025-02-16","min_order_value":2500.00}
+{"promotion_id":"PROMO004","promotion_name":"Ramadan Iftar Deal","promotion_type":"FixedAmountOff","discount_value":500.00,"start_date":"2025-03-01","end_date":"2025-03-29","min_order_value":3000.00}
+{"promotion_id":"PROMO005","promotion_name":"Eid Family Feast","promotion_type":"ComboDeal","discount_value":25.00,"start_date":"2025-03-31","end_date":"2025-04-06"}
+{"promotion_id":"PROMO006","promotion_name":"Spring Pizza Fest","promotion_type":"BOGO","discount_value":1.00,"start_date":"2025-04-15","end_date":"2025-04-30"}
+{"promotion_id":"PROMO007","promotion_name":"Summer Coolers","promotion_type":"PercentOff","discount_value":25.00,"start_date":"2025-05-01","end_date":"2025-06-30"}
+{"promotion_id":"PROMO008","promotion_name":"Mall Mania","promotion_type":"PercentOff","discount_value":10.00,"start_date":"2025-05-15","end_date":"2025-06-15"}
+{"promotion_id":"PROMO009","promotion_name":"Highway Traveler Deal","promotion_type":"FixedAmountOff","discount_value":300.00,"start_date":"2025-06-01","end_date":"2025-09-30","min_order_value":1500.00}
+{"promotion_id":"PROMO010","promotion_name":"Eid ul Adha BBQ Nights","promotion_type":"PercentOff","discount_value":15.00,"start_date":"2025-06-10","end_date":"2025-06-18"}
+{"promotion_id":"PROMO011","promotion_name":"Monsoon Munchies","promotion_type":"FixedAmountOff","discount_value":200.00,"start_date":"2025-07-01","end_date":"2025-07-31","min_order_value":1000.00}
+{"promotion_id":"PROMO012","promotion_name":"August BOGO Blast","promotion_type":"BOGO","discount_value":1.00,"start_date":"2025-08-01","end_date":"2025-08-31"}
+{"promotion_id":"PROMO013","promotion_name":"Independence Day 14% Off","promotion_type":"PercentOff","discount_value":14.00,"start_date":"2025-08-12","end_date":"2025-08-16"}
+{"promotion_id":"PROMO014","promotion_name":"Back to Work Lunch","promotion_type":"FixedAmountOff","discount_value":250.00,"start_date":"2025-09-01","end_date":"2025-09-30","min_order_value":1200.00}
+{"promotion_id":"PROMO015","promotion_name":"App Exclusive Fest","promotion_type":"PercentOff","discount_value":20.00,"start_date":"2025-09-15","end_date":"2025-10-15","min_order_value":2000.00}
+{"promotion_id":"PROMO016","promotion_name":"Pasta Week","promotion_type":"PercentOff","discount_value":20.00,"start_date":"2025-10-20","end_date":"2025-10-27"}
+{"promotion_id":"PROMO017","promotion_name":"Family Platter Month","promotion_type":"ComboDeal","discount_value":30.00,"start_date":"2025-11-01","end_date":"2025-11-20","min_order_value":3500.00}
+{"promotion_id":"PROMO018","promotion_name":"Black Friday Mega Sale","promotion_type":"PercentOff","discount_value":30.00,"start_date":"2025-11-27","end_date":"2025-11-30","min_order_value":2500.00}
+{"promotion_id":"PROMO019","promotion_name":"Winter Soup Season","promotion_type":"PercentOff","discount_value":15.00,"start_date":"2025-12-01","end_date":"2025-12-31"}
+{"promotion_id":"PROMO020","promotion_name":"Year End Celebration","promotion_type":"FixedAmountOff","discount_value":750.00,"start_date":"2025-12-20","end_date":"2025-12-31","min_order_value":5000.00}

@@ -1,0 +1,101 @@
+/* DineIQ shared styles. White/red, no motion. */
+:root {
+  --dq-red: #C8102E;
+  --dq-ink: #1A1A1A;
+  --dq-muted: #6B6B6B;
+  --dq-border: #E5E5E5;
+  --dq-green: #2E7D32;
+}
+
+*, *::before, *::after { transition: none !important; }
+[data-stale="true"], .stale-element { opacity: 1 !important; }
+
+h1 { font-weight: 700 !important; letter-spacing: -0.01em; }
+h3 { font-weight: 600 !important; font-size: 1.15rem !important; margin-top: 0.8rem !important; }
+
+/* White cards on the light gray page */
+[data-testid="stVerticalBlockBorderWrapper"],
+div[data-testid="stVerticalBlock"][class*="border"] {
+  background: #FFFFFF;
+  border-color: var(--dq-border) !important;
+  box-shadow: none !important;
+}
+[data-testid="stSidebar"] { border-right: 1px solid var(--dq-border); }
+
+/* Sidebar navigation */
+[data-testid="stNavSectionHeader"] {
+  color: var(--dq-muted) !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+[data-testid="stSidebarNavLink"][aria-current="page"],
+[data-testid="stSidebarNavLink"].active {
+  background: #FBE7EA !important;
+  border-left: 3px solid var(--dq-red);
+}
+[data-testid="stSidebarNavLink"][aria-current="page"] span { color: var(--dq-red) !important; font-weight: 600; }
+
+/* KPI tiles */
+.dq-kpi {
+  background: #FFFFFF;
+  border: 1px solid var(--dq-border);
+  border-radius: 8px;
+  padding: 14px 16px 12px;
+  min-height: 104px;
+}
+.dq-kpi-label { color: var(--dq-muted); font-size: 0.8rem; font-weight: 500; margin-bottom: 4px; }
+.dq-kpi-value { color: var(--dq-ink); font-size: 1.7rem; font-weight: 700; line-height: 1.15; }
+.dq-kpi-value.accent { color: var(--dq-red); }
+.dq-kpi-delta { font-size: 0.78rem; margin-top: 4px; color: var(--dq-muted); }
+.dq-kpi-delta.pos { color: var(--dq-green); }
+.dq-kpi-delta.neg { color: var(--dq-red); }
+
+/* Priority badges */
+.dq-badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+.dq-badge.critical { background: var(--dq-red); color: #FFFFFF; }
+.dq-badge.high { background: #FDEBD0; color: #8A4B00; border-color: #F5C98A; }
+.dq-badge.medium { background: #FFF6C2; color: #6B5900; border-color: #EEDC7A; }
+.dq-badge.low, .dq-badge.neutral { background: #F0F0F0; color: #555555; border-color: #DDDDDD; }
+
+/* Recommendation and anomaly cards */
+.dq-card {
+  background: #FFFFFF;
+  border: 1px solid var(--dq-border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+.dq-card.critical { border-left: 4px solid var(--dq-red); }
+.dq-card-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.dq-card-meta { color: var(--dq-muted); font-size: 0.78rem; }
+.dq-card-title { color: var(--dq-ink); font-weight: 600; font-size: 1rem; margin-bottom: 2px; }
+.dq-card-summary { color: var(--dq-muted); font-size: 0.86rem; }
+.dq-card ul { margin: 8px 0 0 0; padding-left: 18px; }
+.dq-card li { font-size: 0.85rem; color: var(--dq-ink); margin: 2px 0; }
+
+/* Traceability footer */
+.dq-source {
+  color: #8C8C8C;
+  font-size: 0.72rem;
+  border-top: 1px solid var(--dq-border);
+  padding-top: 4px;
+  margin: 2px 0 14px;
+}
+
+/* Takeaway boxes: neutral instead of Streamlit's blue */
+[data-testid="stAlertContentInfo"] { color: var(--dq-ink); }
+div[data-testid="stAlert"]:has([data-testid="stAlertContentInfo"]) > div {
+  background: #FFFFFF;
+  border: 1px solid var(--dq-border);
+  border-left: 3px solid var(--dq-ink);
+}

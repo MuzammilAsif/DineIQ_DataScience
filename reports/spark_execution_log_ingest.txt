@@ -1,0 +1,116 @@
+[2026-09-24 11:27:35] START  load all 13 tables with explicit StructType schema
+[2026-09-24 11:27:35] START  load Restaurants
+[2026-09-24 11:27:41] Restaurants: 25 rows, 10 cols, schema=struct<location_id:string,name:string,city:string,region:string,address:string,location_type:string,seating_capacity:int,opening_date:date,latitude:decimal(9,6),longitude:decimal(9,6)>
+[2026-09-24 11:27:41] END    load Restaurants (duration 6.60s)
+[2026-09-24 11:27:41] START  load Menu_Categories
+[2026-09-24 11:27:42] Menu_Categories: 14 rows, 3 cols, schema=struct<category_id:string,category_name:string,description:string>
+[2026-09-24 11:27:42] END    load Menu_Categories (duration 0.96s)
+[2026-09-24 11:27:42] START  load Menu_Items
+[2026-09-24 11:27:43] Menu_Items: 160 rows, 10 cols, schema=struct<item_id:string,item_name:string,category_id:string,base_price:decimal(12,2),base_cost:decimal(12,2),description:string,is_active:boolean,launch_date:date,is_seasonal:boolean,season:string>
+[2026-09-24 11:27:43] END    load Menu_Items (duration 0.93s)
+[2026-09-24 11:27:43] START  load Pricing_History
+[2026-09-24 11:27:44] Pricing_History: 959 rows, 8 cols, schema=struct<price_id:string,item_id:string,location_id:string,price:decimal(12,2),cost:decimal(12,2),effective_start_date:date,effective_end_date:date,change_reason:string>
+[2026-09-24 11:27:44] END    load Pricing_History (duration 0.98s)
+[2026-09-24 11:27:44] START  load Customers
+[2026-09-24 11:27:46] Customers: 55000 rows, 7 cols, schema=struct<customer_id:string,signup_date:date,age_group:string,gender:string,home_location_id:string,preferred_channel:string,loyalty_member:boolean>
+[2026-09-24 11:27:46] END    load Customers (duration 1.62s)
+[2026-09-24 11:27:46] START  load Promotions
+[2026-09-24 11:27:46] Promotions: 20 rows, 7 cols, schema=struct<promotion_id:string,promotion_name:string,promotion_type:string,discount_value:decimal(12,2),start_date:date,end_date:date,min_order_value:decimal(12,2)>
+[2026-09-24 11:27:46] END    load Promotions (duration 0.45s)
+[2026-09-24 11:27:46] START  load Promotion_Items
+[2026-09-24 11:27:47] Promotion_Items: 1316 rows, 2 cols, schema=struct<promotion_id:string,item_id:string>
+[2026-09-24 11:27:47] END    load Promotion_Items (duration 0.53s)
+[2026-09-24 11:27:47] START  load Promotion_Locations
+[2026-09-24 11:27:47] Promotion_Locations: 424 rows, 2 cols, schema=struct<promotion_id:string,location_id:string>
+[2026-09-24 11:27:47] END    load Promotion_Locations (duration 0.52s)
+[2026-09-24 11:27:47] START  load Orders
+[2026-09-24 11:27:50] Orders: 196547 rows, 12 cols, schema=struct<order_id:string,customer_id:string,location_id:string,order_datetime:timestamp,order_channel:string,order_status:string,promotion_id:string,subtotal:decimal(12,2),discount_amount:decimal(12,2),tax_amount:decimal(12,2),total_amount:decimal(12,2),payment_method:string>
+[2026-09-24 11:27:50] END    load Orders (duration 2.98s)
+[2026-09-24 11:27:50] START  load Order_Items
+[2026-09-24 11:27:55] Order_Items: 1070114 rows, 8 cols, schema=struct<order_item_id:string,order_id:string,item_id:string,quantity:int,unit_price:decimal(12,2),unit_cost:decimal(12,2),discount_amount:decimal(12,2),line_total:decimal(12,2)>
+[2026-09-24 11:27:55] END    load Order_Items (duration 5.14s)
+[2026-09-24 11:27:55] START  load Ratings
+[2026-09-24 11:27:56] Ratings: 105000 rows, 8 cols, schema=struct<rating_id:string,customer_id:string,item_id:string,location_id:string,order_id:string,rating_value:int,rating_date:date,review_text:string>
+[2026-09-24 11:27:56] END    load Ratings (duration 1.03s)
+[2026-09-24 11:27:56] START  load Inventory
+[2026-09-24 11:28:02] Inventory: 1251246 rows, 10 cols, schema=struct<inventory_id:string,item_id:string,location_id:string,date:date,opening_stock:decimal(12,3),received_stock:decimal(12,3),prepared_quantity:decimal(12,3),consumed_stock:decimal(12,3),closing_stock:decimal(12,3),unit:string>
+[2026-09-24 11:28:02] END    load Inventory (duration 6.12s)
+[2026-09-24 11:28:02] START  load Wastage
+[2026-09-24 11:28:04] Wastage: 60290 rows, 8 cols, schema=struct<wastage_id:string,item_id:string,location_id:string,date:date,quantity_wasted:decimal(12,3),unit:string,cost_of_waste:decimal(12,2),reason:string>
+[2026-09-24 11:28:04] END    load Wastage (duration 1.24s)
+[2026-09-24 11:28:04] END    load all 13 tables with explicit StructType schema (duration 29.11s)
+[2026-09-24 11:28:04] START  schema inference demo (Restaurants, inferSchema=True)
+[2026-09-24 11:28:04] Explicit schema (Restaurants):
+[2026-09-24 11:28:04]   location_id: StringType()
+[2026-09-24 11:28:04]   name: StringType()
+[2026-09-24 11:28:04]   city: StringType()
+[2026-09-24 11:28:04]   region: StringType()
+[2026-09-24 11:28:04]   address: StringType()
+[2026-09-24 11:28:04]   location_type: StringType()
+[2026-09-24 11:28:04]   seating_capacity: IntegerType()
+[2026-09-24 11:28:04]   opening_date: DateType()
+[2026-09-24 11:28:04]   latitude: DecimalType(9,6)
+[2026-09-24 11:28:04]   longitude: DecimalType(9,6)
+[2026-09-24 11:28:04] Inferred schema (Restaurants, inferSchema=True):
+[2026-09-24 11:28:04]   location_id: StringType()
+[2026-09-24 11:28:04]   name: StringType()
+[2026-09-24 11:28:04]   city: StringType()
+[2026-09-24 11:28:04]   region: StringType()
+[2026-09-24 11:28:04]   address: StringType()
+[2026-09-24 11:28:04]   location_type: StringType()
+[2026-09-24 11:28:04]   seating_capacity: IntegerType()
+[2026-09-24 11:28:04]   opening_date: DateType()
+[2026-09-24 11:28:04]   latitude: DoubleType()
+[2026-09-24 11:28:04]   longitude: DoubleType()
+[2026-09-24 11:28:04] END    schema inference demo (Restaurants, inferSchema=True) (duration 0.73s)
+[2026-09-24 11:28:04] START  large/multi-file ingestion demo (Order_Items split by month)
+[2026-09-24 11:28:17] wrote Order_Items to 39 CSV part files across order_month partitions; re-read 1070114 rows from that directory as a single DataFrame (original Order_Items had 1070114 rows)
+[2026-09-24 11:28:17] END    large/multi-file ingestion demo (Order_Items split by month) (duration 12.98s)
+[2026-09-24 11:28:17] START  data-type validation (typed vs raw-string cast diff)
+[2026-09-24 11:28:19] Customers.signup_date: declared type DateType(); 0 truly blank, 142 rows fail to parse as DateType() despite a non-empty raw value (type mismatch)
+[2026-09-24 11:28:21] Orders.order_datetime: declared type TimestampType(); 0 truly blank, 467 rows fail to parse as TimestampType() despite a non-empty raw value (type mismatch)
+[2026-09-24 11:28:22] Ratings.rating_date: declared type DateType(); 0 truly blank, 257 rows fail to parse as DateType() despite a non-empty raw value (type mismatch)
+[2026-09-24 11:28:23] Wastage.date: declared type DateType(); 0 truly blank, 162 rows fail to parse as DateType() despite a non-empty raw value (type mismatch)
+[2026-09-24 11:28:23] END    data-type validation (typed vs raw-string cast diff) (duration 5.68s)
+[2026-09-24 11:28:23] START  referential integrity checks
+[2026-09-24 11:28:24] Orders.customer_id -> Customers.customer_id: 973 orphan rows
+[2026-09-24 11:28:25] Orders.location_id -> Restaurants.location_id: 584 orphan rows
+[2026-09-24 11:28:26] Orders.promotion_id -> Promotions.promotion_id: 0 orphan rows
+[2026-09-24 11:28:28] Order_Items.order_id -> Orders.order_id: 3179 orphan rows
+[2026-09-24 11:28:29] Order_Items.item_id -> Menu_Items.item_id: 3179 orphan rows
+[2026-09-24 11:28:30] Menu_Items.category_id -> Menu_Categories.category_id: 0 orphan rows
+[2026-09-24 11:28:30] Ratings.customer_id -> Customers.customer_id: 315 orphan rows
+[2026-09-24 11:28:31] Ratings.item_id -> Menu_Items.item_id: 0 orphan rows
+[2026-09-24 11:28:31] Ratings.location_id -> Restaurants.location_id: 525 orphan rows
+[2026-09-24 11:28:33] Ratings.order_id -> Orders.order_id: 0 orphan rows
+[2026-09-24 11:28:33] Inventory.item_id -> Menu_Items.item_id: 3754 orphan rows
+[2026-09-24 11:28:34] Inventory.location_id -> Restaurants.location_id: 0 orphan rows
+[2026-09-24 11:28:34] Wastage.item_id -> Menu_Items.item_id: 0 orphan rows
+[2026-09-24 11:28:35] Wastage.location_id -> Restaurants.location_id: 301 orphan rows
+[2026-09-24 11:28:36] Pricing_History.item_id -> Menu_Items.item_id: 0 orphan rows
+[2026-09-24 11:28:36] Pricing_History.location_id -> Restaurants.location_id: 0 orphan rows
+[2026-09-24 11:28:37] Customers.home_location_id -> Restaurants.location_id: 275 orphan rows
+[2026-09-24 11:28:37] END    referential integrity checks (duration 13.69s)
+[2026-09-24 11:28:37] START  missing value checks (non-date required columns)
+[2026-09-24 11:28:51] END    missing value checks (non-date required columns) (duration 14.17s)
+[2026-09-24 11:28:51] START  duplicate checks
+[2026-09-24 11:28:55] END    duplicate checks (duration 4.07s)
+[2026-09-24 11:28:55] START  invalid price / negative quantity checks
+[2026-09-24 11:28:56] END    invalid price / negative quantity checks (duration 1.01s)
+[2026-09-24 11:28:56] START  invalid date range checks
+[2026-09-24 11:28:57] END    invalid date range checks (duration 1.02s)
+[2026-09-24 11:28:57] START  invalid rating checks
+[2026-09-24 11:28:57] END    invalid rating checks (duration 0.21s)
+[2026-09-24 11:28:57] START  impossible wastage quantity check
+[2026-09-24 11:28:59] END    impossible wastage quantity check (duration 1.27s)
+[2026-09-24 11:28:59] START  incorrect discount check
+[2026-09-24 11:28:59] END    incorrect discount check (duration 0.30s)
+[2026-09-24 11:28:59] START  cancelled transaction count
+[2026-09-24 11:28:59] END    cancelled transaction count (duration 0.24s)
+[2026-09-24 11:28:59] START  inconsistent unit checks
+[2026-09-24 11:29:00] END    inconsistent unit checks (duration 0.83s)
+[2026-09-24 11:29:00] START  write data quality report
+[2026-09-24 11:29:00] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/reports/data_quality_report.csv (33 rows) — machine-readable version for tests
+[2026-09-24 11:29:00] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/reports/data_quality_report.md with 33 issue rows
+[2026-09-24 11:29:00] END    write data quality report (duration 0.01s)
+[2026-09-24 11:29:00] ingestion + validation job complete

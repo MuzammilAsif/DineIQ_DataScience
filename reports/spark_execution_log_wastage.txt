@@ -1,0 +1,6 @@
+[2026-09-25 19:21:29] START  wastage analysis
+[2026-09-25 19:23:29] END    wastage analysis (duration 119.43s)
+[2026-09-25 19:23:30] START  wastage-risk model
+[2026-09-25 19:29:41] train=929436 pos=0.0432 test={'n': 318056, 'tp': 6044, 'fp': 20418, 'fn': 7234, 'tn': 284360, 'accuracy': 0.9130593354629374, 'precision': 0.22840299297105282, 'recall': 0.45518903449314657, 'f1': 0.30417715148465024, 'auc_roc': 0.7626269408130956, 'auc_pr': 0.22890842005823764, 'positive_rate': 0.04174736524385643}
+[2026-09-25 19:29:45] END    wastage-risk model (duration 375.77s)
+[2026-09-25 19:29:45] wastage complete

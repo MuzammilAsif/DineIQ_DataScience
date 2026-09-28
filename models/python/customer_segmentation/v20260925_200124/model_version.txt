@@ -1,0 +1,23 @@
+{
+  "version": "v20260925_200124",
+  "algorithm": "sklearn KMeans",
+  "k": 6,
+  "inputs": [
+    "customer_recency",
+    "log_frequency",
+    "log_monetary",
+    "average_order_value",
+    "promo_order_share"
+  ],
+  "as_of_date": "2025-12-31",
+  "cluster_to_segment": {
+    "0": "Promotion-Driven",
+    "1": "Occasional",
+    "2": "High-Value Loyal",
+    "3": "Occasional",
+    "4": "At-Risk",
+    "5": "Occasional"
+  },
+  "holdout_customers": 9899,
+  "holdout_agreement_with_actual": 0.6469340337407818
+}

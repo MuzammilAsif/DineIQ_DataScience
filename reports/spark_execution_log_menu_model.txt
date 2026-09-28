@@ -1,0 +1,15 @@
+[2026-09-25 18:12:20] as_of_date=2025-12-31
+[2026-09-25 18:12:20] START  load and prepare
+[2026-09-25 18:13:07] labels=['Hidden Opportunity', 'Low Performer', 'Profit Driver', 'Volume Driver'] all={'Low Performer': 57, 'Profit Driver': 12, 'Hidden Opportunity': 43, 'Volume Driver': 38} train={'Low Performer': 45, 'Profit Driver': 8, 'Hidden Opportunity': 38, 'Volume Driver': 31} test={'Low Performer': 12, 'Profit Driver': 4, 'Hidden Opportunity': 5, 'Volume Driver': 7}
+[2026-09-25 18:13:07] END    load and prepare (duration 47.60s)
+[2026-09-25 18:13:07] START  cross-validate and evaluate 3 algorithms
+[2026-09-25 18:40:03] END    cross-validate and evaluate 3 algorithms (duration 1616.44s)
+[2026-09-25 18:40:03] LogisticRegression best=regParam=0.01 cv_macro_f1=0.7074 test_acc=0.8214 test_weighted_f1=0.8175 test_macro_f1=0.8115
+[2026-09-25 18:40:03] DecisionTreeClassifier best=maxDepth=3 cv_macro_f1=0.8835 test_acc=0.7857 test_weighted_f1=0.7906 test_macro_f1=0.7985
+[2026-09-25 18:40:03] RandomForestClassifier best=numTrees=30, maxDepth=10 cv_macro_f1=0.8220 test_acc=0.9286 test_weighted_f1=0.9281 test_macro_f1=0.9140
+[2026-09-25 18:40:03] START  save final model v20260925_184004
+[2026-09-25 18:40:32] final=RandomForestClassifier saved to /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/models/spark/menu_classification/v20260925_184004
+[2026-09-25 18:40:32] END    save final model v20260925_184004 (duration 28.79s)
+[2026-09-25 18:40:41] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/reports/sample_predictions_menu_classification.csv
+[2026-09-25 18:40:41] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/reports/spark_mllib_menu_classification_report.md
+[2026-09-25 18:40:41] menu classification model job complete

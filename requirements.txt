@@ -1,0 +1,24 @@
+# Tested with Python 3.14 and OpenJDK 17 on Ubuntu 26.04.
+# Data generation and pipelines
+pandas==3.0.6
+numpy==2.5.3
+Faker==40.39.0
+pyarrow==25.0.1
+pyspark==4.2.0
+PyYAML==6.0.3
+scikit-learn==1.9.1
+joblib==1.6.0
+
+# EDA notebook
+matplotlib==3.11.2
+nbformat==5.11.1
+nbconvert==7.17.1
+ipykernel==7.3.0
+
+# Web app
+streamlit==1.64.0
+plotly==7.1.0
+Werkzeug==3.1.8
+
+# Tests
+pytest==9.1.1

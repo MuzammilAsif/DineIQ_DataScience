@@ -1,0 +1,395 @@
+{
+  "version": "v20260925_195926",
+  "final": "LogisticRegression",
+  "labels": [
+    "Hidden Opportunity",
+    "Low Performer",
+    "Profit Driver",
+    "Volume Driver"
+  ],
+  "n_train": 122,
+  "n_test": 28,
+  "results": [
+    {
+      "name": "LogisticRegression",
+      "grid": {
+        "regParam": [
+          0.0,
+          0.01,
+          0.1
+        ]
+      },
+      "best_params": "regParam=0",
+      "cv_macro_f1": 0.6520741143960957,
+      "train": {
+        "accuracy": 0.9508196721311475,
+        "macro_f1": 0.9635964912280701,
+        "weighted_f1": 0.9508196721311475,
+        "per_class": {
+          "Hidden Opportunity": {
+            "precision": 0.9210526315789473,
+            "recall": 0.9210526315789473,
+            "f1": 0.9210526315789473,
+            "n": 38
+          },
+          "Low Performer": {
+            "precision": 0.9333333333333333,
+            "recall": 0.9333333333333333,
+            "f1": 0.9333333333333333,
+            "n": 45
+          },
+          "Profit Driver": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 8
+          },
+          "Volume Driver": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 31
+          }
+        },
+        "confusion": [
+          [
+            35,
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            42,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            31
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.9285714285714286,
+        "macro_f1": 0.9347222222222222,
+        "weighted_f1": 0.9277777777777777,
+        "per_class": {
+          "Hidden Opportunity": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "n": 5
+          },
+          "Low Performer": {
+            "precision": 0.9166666666666666,
+            "recall": 0.9166666666666666,
+            "f1": 0.9166666666666666,
+            "n": 12
+          },
+          "Profit Driver": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 4
+          },
+          "Volume Driver": {
+            "precision": 0.875,
+            "recall": 1.0,
+            "f1": 0.9333333333333333,
+            "n": 7
+          }
+        },
+        "confusion": [
+          [
+            4,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            11,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "name": "DecisionTreeClassifier",
+      "grid": {
+        "maxDepth": [
+          3,
+          5,
+          8
+        ]
+      },
+      "best_params": "maxDepth=3",
+      "cv_macro_f1": 0.8960568679686325,
+      "train": {
+        "accuracy": 0.9590163934426229,
+        "macro_f1": 0.9698620188816267,
+        "weighted_f1": 0.959075919378073,
+        "per_class": {
+          "Hidden Opportunity": {
+            "precision": 0.8837209302325582,
+            "recall": 1.0,
+            "f1": 0.9382716049382716,
+            "n": 38
+          },
+          "Low Performer": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353,
+            "n": 45
+          },
+          "Profit Driver": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 8
+          },
+          "Volume Driver": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 31
+          }
+        },
+        "confusion": [
+          [
+            38,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            31
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.8571428571428571,
+        "macro_f1": 0.8542124542124543,
+        "weighted_f1": 0.8604918890633176,
+        "per_class": {
+          "Hidden Opportunity": {
+            "precision": 0.625,
+            "recall": 1.0,
+            "f1": 0.7692307692307693,
+            "n": 5
+          },
+          "Low Performer": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "n": 12
+          },
+          "Profit Driver": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "n": 4
+          },
+          "Volume Driver": {
+            "precision": 0.875,
+            "recall": 1.0,
+            "f1": 0.9333333333333333,
+            "n": 7
+          }
+        },
+        "confusion": [
+          [
+            5,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "name": "RandomForestClassifier",
+      "grid": {
+        "numTrees": [
+          30,
+          80
+        ],
+        "maxDepth": [
+          5,
+          10
+        ]
+      },
+      "best_params": "maxDepth=5, numTrees=80",
+      "cv_macro_f1": 0.9161260136492334,
+      "train": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "per_class": {
+          "Hidden Opportunity": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 38
+          },
+          "Low Performer": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 45
+          },
+          "Profit Driver": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 8
+          },
+          "Volume Driver": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "n": 31
+          }
+        },
+        "confusion": [
+          [
+            38,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            45,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            31
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.9285714285714286,
+        "macro_f1": 0.9140222096743835,
+        "weighted_f1": 0.9280578634615902,
+        "per_class": {
+          "Hidden Opportunity": {
+            "precision": 0.8333333333333334,
+            "recall": 1.0,
+            "f1": 0.9090909090909091,
+            "n": 5
+          },
+          "Low Performer": {
+            "precision": 1.0,
+            "recall": 0.9166666666666666,
+            "f1": 0.9565217391304348,
+            "n": 12
+          },
+          "Profit Driver": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "n": 4
+          },
+          "Volume Driver": {
+            "precision": 0.875,
+            "recall": 1.0,
+            "f1": 0.9333333333333333,
+            "n": 7
+          }
+        },
+        "confusion": [
+          [
+            5,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            7
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "v20260925_195926",
+  "algorithm": "LogisticRegression",
+  "params": "regParam=0",
+  "as_of_date": "2025-12-31",
+  "features": [
+    "item_revenue",
+    "item_cost",
+    "contribution_margin",
+    "profit_percentage",
+    "total_quantity_sold",
+    "item_popularity",
+    "order_frequency",
+    "repeat_purchase_rate",
+    "average_rating",
+    "rating_trend",
+    "wastage_percentage",
+    "promotion_dependency",
+    "discount_percentage",
+    "price_change_percentage",
+    "weekend_order_ratio",
+    "sales_trend"
+  ],
+  "test_macro_f1": 0.9347222222222222,
+  "test_accuracy": 0.9285714285714286
+}

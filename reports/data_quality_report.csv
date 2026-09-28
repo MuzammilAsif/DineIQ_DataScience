@@ -1,0 +1,34 @@
+table,column,rule,rows_affected,table_rows,pct_of_table,note
+Customers,signup_date,invalid_date,142,55000,0.2582,malformed/unparseable format
+Orders,order_datetime,invalid_date,467,196547,0.2376,malformed/unparseable format
+Ratings,rating_date,invalid_date,257,105000,0.2448,malformed/unparseable format
+Wastage,date,invalid_date,162,60290,0.2687,malformed/unparseable format
+Orders,customer_id,orphan_foreign_key,973,196547,0.495,-> Customers.customer_id
+Orders,location_id,invalid_restaurant_id,584,196547,0.2971,-> Restaurants.location_id
+Order_Items,order_id,orphan_foreign_key,3179,1070114,0.2971,-> Orders.order_id
+Order_Items,item_id,orphan_foreign_key,3179,1070114,0.2971,-> Menu_Items.item_id
+Ratings,customer_id,orphan_foreign_key,315,105000,0.3,-> Customers.customer_id
+Ratings,location_id,invalid_restaurant_id,525,105000,0.5,-> Restaurants.location_id
+Inventory,item_id,orphan_foreign_key,3754,1251246,0.3,-> Menu_Items.item_id
+Wastage,location_id,invalid_restaurant_id,301,60290,0.4993,-> Restaurants.location_id
+Customers,home_location_id,invalid_location_reference,275,55000,0.5,-> Restaurants.location_id
+Orders,customer_id,missing_value,1946,196547,0.9901,
+Order_Items,item_id,missing_value,5298,1070114,0.4951,
+Ratings,rating_value,missing_value,1575,105000,1.5,
+Wastage,item_id,missing_value,301,60290,0.4993,
+Orders,order_id,duplicate_orders,1946,196547,0.9901,
+Order_Items,order_id+item_id,duplicate_order_items,10663,1070114,0.9964,
+Menu_Items,base_price,invalid_price,3,160,1.875,
+Pricing_History,price,invalid_price,14,959,1.4599,
+Order_Items,unit_price,invalid_price,3179,1070114,0.2971,
+Order_Items,quantity,negative_quantity,5298,1070114,0.4951,
+Customers,signup_date,invalid_date,133,55000,0.2418,outside valid range 2021-01-01..2025-12-20
+Orders,order_datetime,invalid_date,506,196547,0.2574,outside valid range 2025-01-01 00:00:00..2025-12-31 23:59:59
+Ratings,rating_date,invalid_date,268,105000,0.2552,outside valid range 2025-01-01..2026-01-10
+Wastage,date,invalid_date,139,60290,0.2306,outside valid range 2025-01-01..2025-12-31
+Ratings,rating_value,invalid_rating,1050,105000,1.0,
+Wastage,quantity_wasted,impossible_wastage_quantity,600,60290,0.9952,
+Orders,discount_amount,incorrect_discount,973,196547,0.495,
+Orders,order_status,cancelled_transaction_count,8262,196547,4.2036,"not a defect, informational"
+Inventory,unit,inconsistent_unit,12512,1251246,1.0,
+Wastage,unit,inconsistent_unit,1206,60290,2.0003,

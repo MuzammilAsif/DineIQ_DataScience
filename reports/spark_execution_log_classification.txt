@@ -1,0 +1,26 @@
+[2026-09-24 23:15:20] as_of_date=2025-12-31, thresholds from /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/config/classification_thresholds.yaml: {'tiers': {'low_below': 0.33, 'high_above': 0.67}, 'new_item_days': 90, 'excessive_wastage_min': 0.05, 'promotion_dependent_above': 0.5, 'weekend_skewed_above': 0.55, 'high_rating_min': 4.3, 'low_rating_max': 3.0, 'location': {'min_locations': 3, 'inconsistent_share': 0.25}}
+[2026-09-24 23:15:20] START  load item features, fact and dimension tables
+[2026-09-24 23:15:36] END    load item features, fact and dimension tables (duration 15.40s)
+[2026-09-24 23:15:50] START  write /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/menu_classification/as_of_date=2025-12-31
+[2026-09-24 23:17:28] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/menu_classification/as_of_date=2025-12-31 (156 rows)
+[2026-09-24 23:17:28] END    write /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/menu_classification/as_of_date=2025-12-31 (duration 98.26s)
+[2026-09-24 23:17:28] START  write /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/menu_classification_by_location/as_of_date=2025-12-31
+[2026-09-24 23:18:02] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/menu_classification_by_location/as_of_date=2025-12-31 (3518 rows)
+[2026-09-24 23:18:02] END    write /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/menu_classification_by_location/as_of_date=2025-12-31 (duration 33.58s)
+[2026-09-24 23:18:05] category Profit Driver: 12
+[2026-09-24 23:18:05] category Volume Driver: 38
+[2026-09-24 23:18:05] category Hidden Opportunity: 43
+[2026-09-24 23:18:05] category Low Performer: 57
+[2026-09-24 23:18:05] category Insufficient History: 6
+[2026-09-24 23:18:05] flag loss_making: 0
+[2026-09-24 23:18:05] flag rarely_purchased_high_margin: 19
+[2026-09-24 23:18:05] flag excessive_wastage: 35
+[2026-09-24 23:18:05] flag high_rating_low_profit: 0
+[2026-09-24 23:18:05] flag low_rating_high_sales: 1
+[2026-09-24 23:18:05] flag promotion_dependent: 5
+[2026-09-24 23:18:05] flag weekend_skewed: 1
+[2026-09-24 23:18:05] flag seasonal_item: 22
+[2026-09-24 23:18:05] flag location_inconsistent: 48
+[2026-09-24 23:18:05] flag insufficient_history: 6
+[2026-09-24 23:18:05] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/reports/menu_classification_report.md
+[2026-09-24 23:18:05] menu classification job complete

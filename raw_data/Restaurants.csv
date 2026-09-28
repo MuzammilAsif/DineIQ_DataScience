@@ -1,0 +1,26 @@
+location_id,name,city,region,address,location_type,seating_capacity,opening_date,latitude,longitude
+LOC0001,DineIQ Karachi Clifton Block 5,Karachi,Sindh,"Plot 333, Azban Streets, Clifton Block 5, Karachi",Urban,125,2022-11-28,24.815992,67.027557
+LOC0002,DineIQ Karachi DHA Phase 6,Karachi,Sindh,"Plot 80, Owais Fork, DHA Phase 6, Karachi",Suburban,105,2015-08-03,24.795511,67.064734
+LOC0003,DineIQ Karachi Dolmen Mall Clifton,Karachi,Sindh,"Plot 322, Zimran Springs, Dolmen Mall Clifton, Karachi",Mall,125,2023-09-13,24.804869,67.02535
+LOC0004,DineIQ Karachi Saddar,Karachi,Sindh,"Plot 3, Ubaid Manors, Saddar, Karachi",Downtown,95,2015-09-29,24.857579,67.026234
+LOC0005,DineIQ Karachi Gulshan-e-Iqbal,Karachi,Sindh,"Plot 318, Bambad Course, Gulshan-e-Iqbal, Karachi",Suburban,150,2017-07-15,24.916753,67.094464
+LOC0006,DineIQ Super Highway Toll Plaza,Karachi,Sindh,"Plot 314, Gulshan Parkways, Super Highway Toll Plaza, Karachi",Highway,175,2020-06-09,25.071805,67.296958
+LOC0007,DineIQ Lahore Gulberg III,Lahore,Punjab,"Plot 312, Tahawwur Flat, Gulberg III, Lahore",Urban,125,2013-08-11,31.512089,74.34774
+LOC0008,DineIQ Lahore MM Alam Road,Lahore,Punjab,"Plot 266, Talha Mission, MM Alam Road, Lahore",Downtown,70,2019-02-07,31.518289,74.349607
+LOC0009,DineIQ Lahore Emporium Mall Johar Town,Lahore,Punjab,"Plot 189, Tabassum Trace, Emporium Mall Johar Town, Lahore",Mall,110,2018-06-09,31.464025,74.264964
+LOC0010,DineIQ Lahore DHA Phase 5,Lahore,Punjab,"Plot 282, Najeeb Junctions, DHA Phase 5, Lahore",Suburban,160,2021-12-29,31.462603,74.407756
+LOC0011,DineIQ Lahore Johar Town,Lahore,Punjab,"Plot 111, Qabeel Forge, Johar Town, Lahore",Suburban,120,2024-09-12,31.467966,74.269516
+LOC0012,DineIQ Islamabad Blue Area,Islamabad,Islamabad Capital Territory,"Plot 312, Awmar Course, Blue Area, Islamabad",Downtown,100,2020-06-20,33.713414,73.057039
+LOC0013,DineIQ Islamabad F-7 Markaz,Islamabad,Islamabad Capital Territory,"Plot 222, Ubay Knolls, F-7 Markaz, Islamabad",Urban,90,2017-03-20,33.722151,73.055806
+LOC0014,DineIQ Islamabad Centaurus Mall,Islamabad,Islamabad Capital Territory,"Plot 184, Zahri Valley, Centaurus Mall, Islamabad",Mall,100,2017-03-07,33.710582,73.047815
+LOC0015,DineIQ Rawalpindi Saddar,Rawalpindi,Punjab,"Plot 202, Qawee Plain, Saddar, Rawalpindi",Downtown,90,2017-04-30,33.596547,73.053359
+LOC0016,DineIQ Rawalpindi Bahria Town Phase 7,Rawalpindi,Punjab,"Plot 227, Mahmoud Common, Bahria Town Phase 7, Rawalpindi",Suburban,175,2022-05-18,33.527818,73.099497
+LOC0017,DineIQ Faisalabad D Ground,Faisalabad,Punjab,"Plot 15, Ghasaan Ports, D Ground, Faisalabad",Urban,105,2016-02-04,31.418437,73.081661
+LOC0018,DineIQ Faisalabad Lyallpur Galleria,Faisalabad,Punjab,"Plot 56, Tahmaseb Cape, Lyallpur Galleria, Faisalabad",Mall,95,2014-02-16,31.398511,73.104602
+LOC0019,DineIQ Multan Bosan Road,Multan,Punjab,"Plot 98, Kaamil Common, Bosan Road, Multan",Urban,115,2016-04-05,30.217621,71.473499
+LOC0020,DineIQ Peshawar University Road,Peshawar,Khyber Pakhtunkhwa,"Plot 46, Zewad Light, University Road, Peshawar",Urban,155,2012-04-15,34.001053,71.487658
+LOC0021,DineIQ Peshawar Hayatabad Phase 3,Peshawar,Khyber Pakhtunkhwa,"Plot 176, Rabee Roads, Hayatabad Phase 3, Peshawar",Suburban,165,2013-05-09,33.992065,71.442438
+LOC0022,DineIQ Hyderabad Auto Bhan Road,Hyderabad,Sindh,"Plot 267, Ubaid Land, Auto Bhan Road, Hyderabad",Urban,90,2013-02-23,25.377836,68.3671
+LOC0023,DineIQ Quetta Jinnah Road,Quetta,Balochistan,"Plot 262, Aalam Skyway, Jinnah Road, Quetta",Downtown,80,2021-11-02,30.195766,67.005307
+LOC0024,DineIQ M-2 Motorway Service Area,Bhera,Punjab,"Plot 188, Luqman Rest, M-2 Motorway Service Area, Bhera",Highway,200,2021-03-18,32.443145,72.89146
+LOC0025,DineIQ M-1 Motorway Service Area,Nowshera,Khyber Pakhtunkhwa,"Plot 342, Sabahat Stream, M-1 Motorway Service Area, Nowshera",Highway,125,2020-11-18,34.012227,71.947118

@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.IndexToString","timestamp":1790361631708,"sparkVersion":"4.2.0","uid":"IndexToString_a0d7968dbf43","paramMap":{"inputCol":"prediction","labels":["Hidden Opportunity","Low Performer","Profit Driver","Volume Driver"],"outputCol":"predicted_category"},"defaultParamMap":{"outputCol":"IndexToString_a0d7968dbf43__output"}}

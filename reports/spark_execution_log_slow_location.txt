@@ -1,0 +1,3 @@
+[2026-09-25 19:05:47] START  slow-moving and location summary
+[2026-09-25 19:06:22] END    slow-moving and location summary (duration 35.10s)
+[2026-09-25 19:06:27] slow-moving items: 6

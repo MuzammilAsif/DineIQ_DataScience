@@ -1,0 +1,5 @@
+[2026-09-25 19:59:01] START  channels
+[2026-09-25 19:59:23] END    channels (duration 21.36s)
+[2026-09-25 19:59:23] START  churn
+[2026-09-25 19:59:29] END    churn (duration 6.38s)
+[2026-09-25 19:59:32] avg_gap=57.36 threshold=114.7 at_risk=7893/49606

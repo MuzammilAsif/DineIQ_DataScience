@@ -1,0 +1,36 @@
+{
+  "version": "v20260925_184004",
+  "algorithm": "RandomForestClassifier",
+  "params": "numTrees=30, maxDepth=10",
+  "as_of_date": "2025-12-31",
+  "features": [
+    "item_revenue",
+    "item_cost",
+    "contribution_margin",
+    "profit_percentage",
+    "total_quantity_sold",
+    "item_popularity",
+    "order_frequency",
+    "repeat_purchase_rate",
+    "average_rating",
+    "rating_trend",
+    "wastage_percentage",
+    "promotion_dependency",
+    "discount_percentage",
+    "price_change_percentage",
+    "weekend_order_ratio",
+    "sales_trend"
+  ],
+  "labels": [
+    "Hidden Opportunity",
+    "Low Performer",
+    "Profit Driver",
+    "Volume Driver"
+  ],
+  "seed": 42,
+  "cv_macro_f1": 0.8220163814513659,
+  "test_accuracy": 0.9285714285714286,
+  "test_weighted_f1": 0.9280578634615901,
+  "test_macro_f1": 0.9140222096743835,
+  "trained_at": "2026-09-25T18:40:04"
+}

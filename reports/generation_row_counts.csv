@@ -1,0 +1,14 @@
+table,rows,columns
+Restaurants,25,10
+Menu_Categories,14,3
+Menu_Items,160,10
+Pricing_History,959,8
+Customers,55000,7
+Promotions,20,7
+Promotion_Items,1316,2
+Promotion_Locations,424,2
+Orders,196547,12
+Order_Items,1070114,8
+Ratings,105000,8
+Inventory,1251246,10
+Wastage,60290,8

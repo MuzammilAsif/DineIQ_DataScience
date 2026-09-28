@@ -1,0 +1,13 @@
+[2026-09-25 19:31:01] START  anomalies
+[2026-09-25 19:31:34] END    anomalies (duration 32.75s)
+[2026-09-25 19:31:35] anomaly_type       metric           
+high_order_value   total_amount         688
+identical_ratings  share_of_rating_2      2
+                   share_of_rating_3      2
+                   share_of_rating_4     15
+item_sales_z       daily_quantity       894
+                   daily_revenue        869
+location_sales_z   daily_orders         122
+                   daily_revenue        132
+rating_z           avg_rating           238
+                   rating_count         307

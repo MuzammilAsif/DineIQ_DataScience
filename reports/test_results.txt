@@ -1,0 +1,170 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0 -- /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/.venv/bin/python
+rootdir: /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ
+plugins: Faker-40.39.0, anyio-4.15.1
+collecting ... collected 135 items
+
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster PASSED [  0%]
+tests/test_analytics.py::test_rfm_quintiles PASSED                       [  1%]
+tests/test_analytics.py::test_fpgrowth_rule_metrics PASSED               [  2%]
+tests/test_analytics.py::test_wastage_features_exclude_leakage PASSED    [  2%]
+tests/test_analytics.py::test_recent_demand_uses_prior_days_only PASSED  [  3%]
+tests/test_analytics.py::test_elasticity_before_after_with_category_control PASSED [  4%]
+tests/test_analytics.py::test_price_sensitive_item_classes PASSED        [  5%]
+tests/test_analytics.py::test_promotion_trap_flags PASSED                [  5%]
+tests/test_analytics.py::test_rolling_z_flags_spike_only PASSED          [  6%]
+tests/test_analytics.py::test_rating_anomaly_flags_rating_drop_and_identical_week PASSED [  7%]
+tests/test_analytics.py::test_slow_moving_rule PASSED                    [  8%]
+tests/test_analytics.py::test_churn_rule PASSED                          [  8%]
+tests/test_analytics.py::test_write_section_replaces_in_place PASSED     [  9%]
+tests/test_app.py::test_passwords_are_hashed PASSED                      [ 10%]
+tests/test_app.py::test_login_success_sets_session_role PASSED           [ 11%]
+tests/test_app.py::test_login_wrong_password_fails_and_is_audited PASSED [ 11%]
+tests/test_app.py::test_admin_page_stops_non_administrators[analyst] PASSED [ 12%]
+tests/test_app.py::test_admin_page_stops_non_administrators[regional] PASSED [ 13%]
+tests/test_app.py::test_admin_page_stops_non_administrators[manager] PASSED [ 14%]
+tests/test_app.py::test_admin_page_opens_for_administrator PASSED        [ 14%]
+tests/test_app.py::test_page_without_login_is_stopped PASSED             [ 15%]
+tests/test_app.py::test_loaders_return_expected_columns[Executive-0] PASSED [ 16%]
+tests/test_app.py::test_loaders_return_expected_columns[Executive-1] PASSED [ 17%]
+tests/test_app.py::test_loaders_return_expected_columns[Menu-2] PASSED   [ 17%]
+tests/test_app.py::test_loaders_return_expected_columns[Menu-3] PASSED   [ 18%]
+tests/test_app.py::test_loaders_return_expected_columns[Customer-4] PASSED [ 19%]
+tests/test_app.py::test_loaders_return_expected_columns[Wastage-5] PASSED [ 20%]
+tests/test_app.py::test_loaders_return_expected_columns[Wastage-6] PASSED [ 20%]
+tests/test_app.py::test_loaders_return_expected_columns[Forecast-7] PASSED [ 21%]
+tests/test_app.py::test_loaders_return_expected_columns[Dual-Pipeline-8] PASSED [ 22%]
+tests/test_app.py::test_loaders_return_expected_columns[Recommendations-9] PASSED [ 22%]
+tests/test_app.py::test_loaders_return_expected_columns[Admin-10] PASSED [ 23%]
+tests/test_app.py::test_anomaly_severity_follows_z_score PASSED          [ 24%]
+tests/test_app.py::test_anomalies_page_renders_cards PASSED              [ 25%]
+tests/test_cleaning.py::test_no_negative_quantity PASSED                 [ 25%]
+tests/test_cleaning.py::test_no_invalid_rating PASSED                    [ 26%]
+tests/test_cleaning.py::test_no_invalid_price PASSED                     [ 27%]
+tests/test_cleaning.py::test_no_incorrect_discount PASSED                [ 28%]
+tests/test_cleaning.py::test_no_missing_required_ids PASSED              [ 28%]
+tests/test_cleaning.py::test_no_orphan_orders_customer PASSED            [ 29%]
+tests/test_cleaning.py::test_no_orphan_order_items PASSED                [ 30%]
+tests/test_cleaning.py::test_no_duplicate_orders PASSED                  [ 31%]
+tests/test_cleaning.py::test_no_duplicate_order_items PASSED             [ 31%]
+tests/test_cleaning.py::test_units_normalized PASSED                     [ 32%]
+tests/test_cleaning.py::test_no_wastage_exceeding_prepared PASSED        [ 33%]
+tests/test_data_quality.py::test_reports_exist PASSED                    [ 34%]
+tests/test_data_quality.py::test_injected_issues_are_detected PASSED     [ 34%]
+tests/test_data_quality.py::test_counts_roughly_match_injection_log PASSED [ 35%]
+tests/test_demand_forecasting.py::test_lag_7_equals_quantity_seven_days_earlier PASSED [ 36%]
+tests/test_demand_forecasting.py::test_horizon_shifts_target_not_history PASSED [ 37%]
+tests/test_demand_forecasting.py::test_split_is_chronological PASSED     [ 37%]
+tests/test_demand_forecasting.py::test_metrics_hand_computed PASSED      [ 38%]
+tests/test_feature_engineering.py::test_item_sales_features PASSED       [ 39%]
+tests/test_feature_engineering.py::test_item_popularity_is_percentile_rank PASSED [ 40%]
+tests/test_feature_engineering.py::test_item_rating_features PASSED      [ 40%]
+tests/test_feature_engineering.py::test_rating_trend_null_under_three_months PASSED [ 41%]
+tests/test_feature_engineering.py::test_item_wastage_percentage PASSED   [ 42%]
+tests/test_feature_engineering.py::test_item_price_change_uses_chain_wide_prices PASSED [ 42%]
+tests/test_feature_engineering.py::test_item_with_no_sales_has_null_ratios PASSED [ 43%]
+tests/test_feature_engineering.py::test_item_as_of_date_excludes_later_records PASSED [ 44%]
+tests/test_feature_engineering.py::test_items_launched_after_as_of_date_are_excluded PASSED [ 45%]
+tests/test_feature_engineering.py::test_item_weekend_order_ratio PASSED  [ 45%]
+tests/test_feature_engineering.py::test_item_sales_trend PASSED          [ 46%]
+tests/test_feature_engineering.py::test_item_location_features PASSED    [ 47%]
+tests/test_feature_engineering.py::test_customer_features PASSED         [ 48%]
+tests/test_feature_engineering.py::test_customer_excludes_cancelled_orders PASSED [ 48%]
+tests/test_feature_engineering.py::test_customer_as_of_date_changes_recency PASSED [ 49%]
+tests/test_feature_engineering.py::test_as_of_date_includes_whole_day PASSED [ 50%]
+tests/test_feature_engineering.py::test_peak_hour_boundaries PASSED      [ 51%]
+tests/test_feature_engineering.py::test_location_features PASSED         [ 51%]
+tests/test_feature_engineering.py::test_location_with_no_orders_has_null_ratios PASSED [ 52%]
+tests/test_feature_engineering.py::test_location_as_of_date_excludes_later_records PASSED [ 53%]
+tests/test_feature_engineering.py::test_basket_size PASSED               [ 54%]
+tests/test_joins.py::test_fact_table_row_count_matches_cleaned_order_items PASSED [ 54%]
+tests/test_joins.py::test_fact_table_has_expected_grain_columns PASSED   [ 55%]
+tests/test_joins.py::test_fact_table_order_item_id_is_unique PASSED      [ 56%]
+tests/test_menu_classification.py::test_profit_driver PASSED             [ 57%]
+tests/test_menu_classification.py::test_volume_driver PASSED             [ 57%]
+tests/test_menu_classification.py::test_hidden_opportunity_from_quality PASSED [ 58%]
+tests/test_menu_classification.py::test_low_performer PASSED             [ 59%]
+tests/test_menu_classification.py::test_all_medium_is_low_performer PASSED [ 60%]
+tests/test_menu_classification.py::test_high_selling_loss_making_is_volume_driver PASSED [ 60%]
+tests/test_menu_classification.py::test_highly_profitable_rarely_purchased PASSED [ 61%]
+tests/test_menu_classification.py::test_popular_dish_with_excessive_wastage_loses_profit_driver PASSED [ 62%]
+tests/test_menu_classification.py::test_relatively_high_wastage_under_floor_is_not_excessive PASSED [ 62%]
+tests/test_menu_classification.py::test_highly_rated_poor_profitability PASSED [ 63%]
+tests/test_menu_classification.py::test_low_rated_high_sales PASSED      [ 64%]
+tests/test_menu_classification.py::test_promotion_dependent[0.01-True] PASSED [ 65%]
+tests/test_menu_classification.py::test_promotion_dependent[0.0-False] PASSED [ 65%]
+tests/test_menu_classification.py::test_weekend_skewed[0.01-True] PASSED [ 66%]
+tests/test_menu_classification.py::test_weekend_skewed[0.0-False] PASSED [ 67%]
+tests/test_menu_classification.py::test_seasonal_item_flag_does_not_change_category PASSED [ 68%]
+tests/test_menu_classification.py::test_new_item_is_insufficient_history_regardless_of_numbers PASSED [ 68%]
+tests/test_menu_classification.py::test_item_at_new_item_cutoff_is_classified_normally PASSED [ 69%]
+tests/test_menu_classification.py::test_new_items_do_not_shift_established_percentiles PASSED [ 70%]
+tests/test_menu_classification.py::test_zero_sales_is_low_performer PASSED [ 71%]
+tests/test_menu_classification.py::test_unrated_item_uses_repeat_rate_for_quality PASSED [ 71%]
+tests/test_menu_classification.py::test_location_inconsistent PASSED     [ 72%]
+tests/test_menu_classification.py::test_build_filters_inactive_and_derives_launch_age PASSED [ 73%]
+tests/test_menu_classification.py::test_config_wastage_floor_changes_category PASSED [ 74%]
+tests/test_menu_classification.py::test_config_new_item_days_changes_category PASSED [ 74%]
+tests/test_menu_classification_model.py::test_prepare_drops_insufficient_history_and_fills_zero PASSED [ 75%]
+tests/test_menu_classification_model.py::test_folds_hold_every_class PASSED [ 76%]
+tests/test_menu_classification_model.py::test_pipeline_runs_end_to_end PASSED [ 77%]
+tests/test_menu_classification_model.py::test_no_leakage_columns_in_feature_vector PASSED [ 77%]
+tests/test_menu_classification_model.py::test_macro_f1_matches_hand_computed PASSED [ 78%]
+tests/test_menu_classification_model.py::test_class_never_predicted_scores_zero PASSED [ 79%]
+tests/test_menu_classification_model.py::test_saved_model_reloads_with_same_predictions PASSED [ 80%]
+tests/test_parquet_roundtrip.py::test_parquet_write_read_roundtrip PASSED [ 80%]
+tests/test_python_pipeline.py::test_pipeline_imports_nothing_from_spark[features.py] PASSED [ 81%]
+tests/test_python_pipeline.py::test_pipeline_imports_nothing_from_spark[segment_rules.py] PASSED [ 82%]
+tests/test_python_pipeline.py::test_pipeline_imports_nothing_from_spark[menu_classification_model.py] PASSED [ 82%]
+tests/test_python_pipeline.py::test_pipeline_imports_nothing_from_spark[customer_segmentation_model.py] PASSED [ 83%]
+tests/test_python_pipeline.py::test_pipeline_never_reads_spark_features_or_segments[features.py] PASSED [ 84%]
+tests/test_python_pipeline.py::test_pipeline_never_reads_spark_features_or_segments[segment_rules.py] PASSED [ 85%]
+tests/test_python_pipeline.py::test_pipeline_never_reads_spark_features_or_segments[menu_classification_model.py] PASSED [ 85%]
+tests/test_python_pipeline.py::test_pipeline_never_reads_spark_features_or_segments[customer_segmentation_model.py] PASSED [ 86%]
+tests/test_python_pipeline.py::test_features_computed_from_raw_tables PASSED [ 87%]
+tests/test_python_pipeline.py::test_agreement_percentage_hand_example PASSED [ 88%]
+tests/test_python_pipeline.py::test_rule_segments PASSED                 [ 88%]
+tests/test_python_pipeline.py::test_holdout_split_matches_spark_crc32 PASSED [ 89%]
+tests/test_recommendations_whatif.py::test_every_recommendation_has_numeric_evidence PASSED [ 90%]
+tests/test_recommendations_whatif.py::test_priority_buckets_follow_percentiles PASSED [ 91%]
+tests/test_recommendations_whatif.py::test_priority_counts_on_real_output PASSED [ 91%]
+tests/test_recommendations_whatif.py::test_baseline_metrics PASSED       [ 92%]
+tests/test_recommendations_whatif.py::test_price_change PASSED           [ 93%]
+tests/test_recommendations_whatif.py::test_discount_change PASSED        [ 94%]
+tests/test_recommendations_whatif.py::test_promotion_frequency PASSED    [ 94%]
+tests/test_recommendations_whatif.py::test_remove_item PASSED            [ 95%]
+tests/test_recommendations_whatif.py::test_reduce_prep PASSED            [ 96%]
+tests/test_recommendations_whatif.py::test_demand_change PASSED          [ 97%]
+tests/test_recommendations_whatif.py::test_wastage_assumption PASSED     [ 97%]
+tests/test_recommendations_whatif.py::test_simulate_on_real_item_is_labelled PASSED [ 98%]
+tests/test_schema.py::test_thirteen_tables_declared PASSED               [ 99%]
+tests/test_schema.py::test_loaded_schema_matches_declared_struct_type PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+  /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/.venv/lib/python3.14/site-packages/pyspark/testing/utils.py:127: FutureWarning: PySpark does not yet fully support pandas >= 3.0.0. Some features may not work correctly. It is recommended to use pandas < 3.0.0 for now.
+    require_minimum_pandas_version()
+
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+  /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/.venv/lib/python3.14/site-packages/pyspark/sql/pandas/conversion.py:298: FutureWarning: PySpark does not yet fully support pandas >= 3.0.0. Some features may not work correctly. It is recommended to use pandas < 3.0.0 for now.
+    require_minimum_pandas_version()
+
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+tests/test_analytics.py::test_high_value_customer_lands_in_high_value_cluster
+  /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/.venv/lib/python3.14/site-packages/pyspark/sql/pandas/types.py:1024: Pandas4Warning: The copy keyword is deprecated and will be removed in a future version. Copy-on-Write is active in pandas since 3.0 which utilizes a lazy copy mechanism that defers copies until necessary. Use .copy() to make an eager copy if necessary.
+    return pser.astype(pandas_type, copy=False)
+
+tests/test_menu_classification_model.py::test_pipeline_runs_end_to_end
+tests/test_menu_classification_model.py::test_macro_f1_matches_hand_computed
+tests/test_menu_classification_model.py::test_class_never_predicted_scores_zero
+  /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/.venv/lib/python3.14/site-packages/pyspark/sql/context.py:158: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================ 135 passed, 13 warnings in 1414.86s (0:23:34) =================

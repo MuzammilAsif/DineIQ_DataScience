@@ -1,0 +1,15 @@
+category_id,category_name,description
+CAT01,Appetizers,Starters and small plates served before the main meal
+CAT02,Soups,Hot soups served by the bowl
+CAT03,Salads,Fresh salads and chaats
+CAT04,BBQ & Grills,"Charcoal grilled kababs, tikkas and platters"
+CAT05,Karahi & Handi,Traditional curries cooked in karahi or handi
+CAT06,Rice & Biryani,"Biryani, pulao and rice dishes"
+CAT07,Burgers & Wraps,"Burgers, wraps and sandwiches"
+CAT08,Pizza,Medium and family size pizzas
+CAT09,Pasta,Italian and fusion pasta dishes
+CAT10,Seafood,Fish and prawn dishes
+CAT11,Desserts,Traditional and continental desserts
+CAT12,Hot Beverages,Tea and coffee
+CAT13,Cold Beverages & Shakes,"Soft drinks, juices, shakes and mocktails"
+CAT14,Sides & Breads,"Fries, naan, roti and other sides"

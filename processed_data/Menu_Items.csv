@@ -1,0 +1,161 @@
+item_id,item_name,category_id,base_price,base_cost,description,is_active,launch_date,is_seasonal,season
+ITEM0001,Chicken Samosa,CAT01,270.00,95.57,Chicken Samosa from our appetizers menu,true,2020-02-13,false,AllYear
+ITEM0002,Vegetable Samosa,CAT01,215.00,75.87,Vegetable Samosa from our appetizers menu,true,2019-02-16,false,AllYear
+ITEM0003,Aloo Pakora,CAT01,380.00,142.17,Aloo Pakora from our appetizers menu,true,2021-01-16,true,Monsoon
+ITEM0004,Chicken Pakora,CAT01,590.00,220.14,Chicken Pakora from our appetizers menu,true,2021-04-04,true,Monsoon
+ITEM0005,Dahi Bhallay,CAT01,420.00,149.00,Dahi Bhallay from our appetizers menu,true,2022-04-05,false,AllYear
+ITEM0006,Chicken Wings (6 pcs),CAT01,770.00,296.28,Chicken Wings (6 pcs) from our appetizers menu,true,2020-11-16,false,AllYear
+ITEM0007,Chicken Wings Bucket,CAT01,1570.00,711.90,Chicken Wings Bucket from our appetizers menu,true,2021-10-11,false,AllYear
+ITEM0008,Loaded Nachos,CAT01,1030.00,165.58,Loaded Nachos from our appetizers menu,true,2021-03-27,false,AllYear
+ITEM0009,Veg Spring Rolls,CAT01,490.00,185.03,Veg Spring Rolls from our appetizers menu,true,2021-10-25,false,AllYear
+ITEM0010,Dynamite Prawns,CAT01,1390.00,568.66,Dynamite Prawns from our appetizers menu,true,2025-06-12,false,AllYear
+ITEM0011,Chicken Tempura,CAT01,940.00,340.59,Chicken Tempura from our appetizers menu,true,2018-10-26,false,AllYear
+ITEM0012,Crispy Fish Bites,CAT01,900.00,402.60,Crispy Fish Bites from our appetizers menu,true,2018-03-13,false,AllYear
+ITEM0013,Papri Chaat,CAT01,400.00,179.48,Papri Chaat from our appetizers menu,true,2023-01-08,true,Monsoon
+ITEM0014,Chicken Corn Soup,CAT02,490.00,180.01,Chicken Corn Soup from our soups menu,true,2019-01-21,true,Winter
+ITEM0015,Hot & Sour Soup,CAT02,520.00,184.59,Hot & Sour Soup from our soups menu,true,2020-11-23,true,Winter
+ITEM0016,Cream of Mushroom Soup,CAT02,560.00,210.83,Cream of Mushroom Soup from our soups menu,true,2017-10-03,true,Winter
+ITEM0017,Thai Tom Yum Soup,CAT02,680.00,292.31,Thai Tom Yum Soup from our soups menu,true,2019-11-06,false,AllYear
+ITEM0018,Mutton Yakhni,CAT02,620.00,236.34,Mutton Yakhni from our soups menu,true,2020-09-21,true,Winter
+ITEM0019,Lentil Soup,CAT02,360.00,154.84,Lentil Soup from our soups menu,true,2021-07-31,false,AllYear
+ITEM0020,Seafood Soup,CAT02,810.00,323.82,Seafood Soup from our soups menu,true,2020-09-10,false,AllYear
+ITEM0021,Tomato Basil Soup,CAT02,450.00,184.70,Tomato Basil Soup from our soups menu,true,2019-03-20,false,AllYear
+ITEM0022,Chicken Noodle Soup,CAT02,490.00,174.65,Chicken Noodle Soup from our soups menu,false,2024-07-29,true,Winter
+ITEM0023,Fresh Garden Salad,CAT03,470.00,200.14,Fresh Garden Salad from our salads menu,true,2020-07-27,false,AllYear
+ITEM0024,Caesar Salad,CAT03,820.00,285.28,Caesar Salad from our salads menu,true,2023-03-17,false,AllYear
+ITEM0025,Greek Salad,CAT03,820.00,334.06,Greek Salad from our salads menu,true,2022-07-27,false,AllYear
+ITEM0026,Russian Salad,CAT03,570.00,245.78,Russian Salad from our salads menu,true,2020-12-23,false,AllYear
+ITEM0027,Fruit Chaat,CAT03,420.00,144.90,Fruit Chaat from our salads menu,true,2023-11-27,true,Summer
+ITEM0028,Chickpea Chaat,CAT03,390.00,160.88,Chickpea Chaat from our salads menu,true,2017-02-21,true,Monsoon
+ITEM0029,Grilled Chicken Salad,CAT03,950.00,312.12,Grilled Chicken Salad from our salads menu,true,2024-03-18,false,AllYear
+ITEM0030,Kachumber Salad,CAT03,265.00,110.76,Kachumber Salad from our salads menu,true,2023-08-01,false,AllYear
+ITEM0031,Quinoa Power Bowl,CAT03,1100.00,364.08,Quinoa Power Bowl from our salads menu,true,2025-03-10,false,AllYear
+ITEM0032,Chicken Tikka,CAT04,780.00,356.48,Chicken Tikka from our bbq & grills menu,true,2022-07-16,false,AllYear
+ITEM0033,Seekh Kabab,CAT04,940.00,306.02,Seekh Kabab from our bbq & grills menu,true,2020-08-21,false,AllYear
+ITEM0034,Malai Boti,CAT04,1220.00,445.69,Malai Boti from our bbq & grills menu,true,2018-05-25,false,AllYear
+ITEM0035,Reshmi Kabab,CAT04,1000.00,418.08,Reshmi Kabab from our bbq & grills menu,true,2023-02-18,false,AllYear
+ITEM0036,Chicken Boti,CAT04,840.00,338.10,Chicken Boti from our bbq & grills menu,true,2018-03-11,false,AllYear
+ITEM0037,Mutton Chops,CAT04,2380.00,995.51,Mutton Chops from our bbq & grills menu,true,2018-10-21,false,AllYear
+ITEM0038,Beef Bihari Boti,CAT04,1200.00,510.66,Beef Bihari Boti from our bbq & grills menu,true,2020-08-18,false,AllYear
+ITEM0039,Gola Kabab,CAT04,980.00,450.35,Gola Kabab from our bbq & grills menu,true,2023-06-20,false,AllYear
+ITEM0040,Chapli Kabab,CAT04,750.00,267.75,Chapli Kabab from our bbq & grills menu,true,2019-06-04,false,AllYear
+ITEM0041,Tandoori Chicken (Half),CAT04,1310.00,515.58,Tandoori Chicken (Half) from our bbq & grills menu,true,2020-05-28,false,AllYear
+ITEM0042,BBQ Platter for 4,CAT04,5470.00,2596.95,BBQ Platter for 4 from our bbq & grills menu,true,2016-05-15,false,AllYear
+ITEM0043,Mutton Raan,CAT04,5110.00,2066.57,Mutton Raan from our bbq & grills menu,true,2017-01-12,false,AllYear
+ITEM0044,Grilled Fish Tikka,CAT04,1480.00,512.67,Grilled Fish Tikka from our bbq & grills menu,true,2016-07-01,false,AllYear
+ITEM0045,Chicken Karahi (Half),CAT05,1530.00,595.53,Chicken Karahi (Half) from our karahi & handi menu,true,2016-08-22,false,AllYear
+ITEM0046,Mutton Karahi (Half),CAT05,2820.00,1115.76,Mutton Karahi (Half) from our karahi & handi menu,true,2023-09-29,false,AllYear
+ITEM0047,Chicken White Karahi,CAT05,1650.00,627.28,Chicken White Karahi from our karahi & handi menu,true,2023-07-05,false,AllYear
+ITEM0048,Chicken Handi,CAT05,1520.00,597.64,Chicken Handi from our karahi & handi menu,true,2023-04-30,false,AllYear
+ITEM0049,Mutton Handi,CAT05,2660.00,1132.57,Mutton Handi from our karahi & handi menu,true,2016-06-29,false,AllYear
+ITEM0050,Peshawari Karahi,CAT05,1770.00,776.26,Peshawari Karahi from our karahi & handi menu,true,2016-09-09,false,AllYear
+ITEM0051,Daal Makhni,CAT05,680.00,266.66,Daal Makhni from our karahi & handi menu,true,2018-07-02,false,AllYear
+ITEM0052,Palak Paneer,CAT05,800.00,314.45,Palak Paneer from our karahi & handi menu,true,2021-01-15,false,AllYear
+ITEM0053,Chicken Jalfrezi,CAT05,1360.00,605.77,Chicken Jalfrezi from our karahi & handi menu,true,2018-12-24,false,AllYear
+ITEM0054,Nihari,CAT05,1330.00,424.10,Nihari from our karahi & handi menu,true,2020-05-06,true,Winter
+ITEM0055,Haleem,CAT05,750.00,235.61,Haleem from our karahi & handi menu,true,2017-07-17,true,Winter
+ITEM0056,Butter Chicken,CAT05,1440.00,468.22,Butter Chicken from our karahi & handi menu,true,2022-07-08,false,AllYear
+ITEM0057,Chicken Biryani,CAT06,690.00,468.22,Chicken Biryani from our rice & biryani menu,true,2018-10-19,false,AllYear
+ITEM0058,Mutton Biryani,CAT06,1250.00,392.19,Mutton Biryani from our rice & biryani menu,true,2016-08-04,false,AllYear
+ITEM0059,Sindhi Biryani,CAT06,730.00,317.89,Sindhi Biryani from our rice & biryani menu,true,2022-08-15,false,AllYear
+ITEM0060,Beef Pulao,CAT06,830.00,333.17,Beef Pulao from our rice & biryani menu,true,2024-01-19,false,AllYear
+ITEM0061,Mutton Pulao,CAT06,980.00,363.74,Mutton Pulao from our rice & biryani menu,true,2016-02-17,false,AllYear
+ITEM0062,Chicken Fried Rice,CAT06,670.00,350.53,Chicken Fried Rice from our rice & biryani menu,true,2019-11-23,false,AllYear
+ITEM0063,Egg Fried Rice,CAT06,570.00,248.26,Egg Fried Rice from our rice & biryani menu,false,2023-05-18,false,AllYear
+ITEM0064,Vegetable Biryani,CAT06,550.00,191.14,Vegetable Biryani from our rice & biryani menu,true,2022-04-18,false,AllYear
+ITEM0065,Prawn Biryani,CAT06,1360.00,503.63,Prawn Biryani from our rice & biryani menu,true,2023-08-21,false,AllYear
+ITEM0066,Kabuli Pulao,CAT06,950.00,343.77,Kabuli Pulao from our rice & biryani menu,true,2019-09-14,false,AllYear
+ITEM0067,Steamed Rice,CAT06,320.00,108.16,Steamed Rice from our rice & biryani menu,true,2019-04-27,false,AllYear
+ITEM0068,Zinger Burger,CAT07,680.00,470.19,Zinger Burger from our burgers & wraps menu,true,2022-04-28,false,AllYear
+ITEM0069,Classic Beef Burger,CAT07,1180.00,407.68,Classic Beef Burger from our burgers & wraps menu,true,2017-05-15,false,AllYear
+ITEM0070,Double Patty Burger,CAT07,1330.00,627.42,Double Patty Burger from our burgers & wraps menu,true,2018-02-18,false,AllYear
+ITEM0071,Chicken Tikka Wrap,CAT07,710.00,267.43,Chicken Tikka Wrap from our burgers & wraps menu,true,2021-05-10,false,AllYear
+ITEM0072,Grilled Chicken Burger,CAT07,790.00,332.55,Grilled Chicken Burger from our burgers & wraps menu,true,2021-12-17,false,AllYear
+ITEM0073,Fish Burger,CAT07,850.00,331.31,Fish Burger from our burgers & wraps menu,true,2017-01-24,false,AllYear
+ITEM0074,Mushroom Swiss Burger,CAT07,1230.00,548.77,Mushroom Swiss Burger from our burgers & wraps menu,true,2020-07-13,false,AllYear
+ITEM0075,Crispy Chicken Wrap,CAT07,630.00,269.61,Crispy Chicken Wrap from our burgers & wraps menu,true,2019-04-03,false,AllYear
+ITEM0076,Chapli Kabab Burger,CAT07,750.00,294.74,Chapli Kabab Burger from our burgers & wraps menu,true,2020-06-22,false,AllYear
+ITEM0077,Club Sandwich,CAT07,680.00,302.29,Club Sandwich from our burgers & wraps menu,true,2024-07-18,false,AllYear
+ITEM0078,Smash Burger,CAT07,1250.00,560.33,Smash Burger from our burgers & wraps menu,true,2025-10-06,false,AllYear
+ITEM0079,Korean Fried Chicken Burger,CAT07,1100.00,454.64,Korean Fried Chicken Burger from our burgers & wraps menu,true,2025-11-03,false,AllYear
+ITEM0080,Nashville Hot Wrap,CAT07,950.00,421.47,Nashville Hot Wrap from our burgers & wraps menu,true,2025-11-24,false,AllYear
+ITEM0081,Chicken Tikka Pizza (Medium),CAT08,1510.00,1047.44,Chicken Tikka Pizza (Medium) from our pizza menu,true,2022-11-19,false,AllYear
+ITEM0082,Fajita Pizza (Medium),CAT08,2000.00,707.81,Fajita Pizza (Medium) from our pizza menu,true,2019-10-14,false,AllYear
+ITEM0083,Pepperoni Pizza (Medium),CAT08,1760.00,701.86,Pepperoni Pizza (Medium) from our pizza menu,true,2018-10-09,false,AllYear
+ITEM0084,Margherita Pizza (Medium),CAT08,1240.00,425.59,Margherita Pizza (Medium) from our pizza menu,true,2022-11-14,false,AllYear
+ITEM0085,BBQ Chicken Pizza (Medium),CAT08,1630.00,650.03,BBQ Chicken Pizza (Medium) from our pizza menu,true,2022-02-17,false,AllYear
+ITEM0086,Vegetable Supreme Pizza (Medium),CAT08,1380.00,560.08,Vegetable Supreme Pizza (Medium) from our pizza menu,true,2017-04-14,false,AllYear
+ITEM0087,Jumbo Family Pizza,CAT08,3170.00,1492.61,Jumbo Family Pizza from our pizza menu,true,2022-04-16,false,AllYear
+ITEM0088,Malai Boti Pizza (Medium),CAT08,1710.00,651.22,Malai Boti Pizza (Medium) from our pizza menu,true,2022-09-18,false,AllYear
+ITEM0089,Seafood Pizza (Medium),CAT08,2070.00,892.05,Seafood Pizza (Medium) from our pizza menu,true,2019-06-17,false,AllYear
+ITEM0090,Four Cheese Pizza (Medium),CAT08,1910.00,682.77,Four Cheese Pizza (Medium) from our pizza menu,true,2024-04-02,false,AllYear
+ITEM0091,Kebab Crust Pizza (Medium),CAT08,1920.00,724.96,Kebab Crust Pizza (Medium) from our pizza menu,true,2025-05-20,false,AllYear
+ITEM0092,Alfredo Pasta,CAT09,1410.00,465.66,Alfredo Pasta from our pasta menu,true,2018-12-22,false,AllYear
+ITEM0093,Arrabbiata Pasta,CAT09,1140.00,410.14,Arrabbiata Pasta from our pasta menu,true,2016-02-04,false,AllYear
+ITEM0094,Beef Lasagna,CAT09,1550.00,716.43,Beef Lasagna from our pasta menu,true,2022-01-07,false,AllYear
+ITEM0095,Chicken Mac and Cheese,CAT09,1190.00,508.41,Chicken Mac and Cheese from our pasta menu,true,2017-11-11,false,AllYear
+ITEM0096,Truffle Mushroom Pasta,CAT09,1840.00,298.74,Truffle Mushroom Pasta from our pasta menu,true,2022-09-30,false,AllYear
+ITEM0097,Pink Sauce Pasta,CAT09,1200.00,539.54,Pink Sauce Pasta from our pasta menu,true,2025-10-20,false,AllYear
+ITEM0098,Spaghetti Bolognese,CAT09,1220.00,521.65,Spaghetti Bolognese from our pasta menu,true,2020-02-29,false,AllYear
+ITEM0099,Pesto Pasta,CAT09,1300.00,471.54,Pesto Pasta from our pasta menu,true,2017-06-17,false,AllYear
+ITEM0100,Crunchy Chicken Pasta,CAT09,1260.00,549.26,Crunchy Chicken Pasta from our pasta menu,true,2022-05-06,false,AllYear
+ITEM0101,Baked Chicken Penne,CAT09,1230.00,414.61,Baked Chicken Penne from our pasta menu,true,2017-06-24,false,AllYear
+ITEM0102,Fried Fish Lahori,CAT10,1410.00,625.27,Fried Fish Lahori from our seafood menu,true,2019-09-22,true,Winter
+ITEM0103,Grilled Prawns Platter,CAT10,3090.00,1298.00,Grilled Prawns Platter from our seafood menu,true,2023-06-16,false,AllYear
+ITEM0104,Finger Fish,CAT10,1420.00,476.78,Finger Fish from our seafood menu,true,2024-03-16,false,AllYear
+ITEM0105,Prawn Karahi,CAT10,2660.00,878.39,Prawn Karahi from our seafood menu,true,2024-10-26,false,AllYear
+ITEM0106,Grilled Salmon Steak,CAT10,4170.00,1825.61,Grilled Salmon Steak from our seafood menu,true,2024-07-17,false,AllYear
+ITEM0107,Fish and Chips,CAT10,1430.00,473.19,Fish and Chips from our seafood menu,true,2020-12-15,false,AllYear
+ITEM0108,Lemon Butter Fish,CAT10,1800.00,648.55,Lemon Butter Fish from our seafood menu,true,2017-10-14,false,AllYear
+ITEM0109,Masala Fish,CAT10,1500.00,513.48,Masala Fish from our seafood menu,true,2023-06-25,false,AllYear
+ITEM0110,Calamari Rings,CAT10,1330.00,558.62,Calamari Rings from our seafood menu,true,2023-02-23,false,AllYear
+ITEM0111,Gulab Jamun,CAT11,260.00,91.26,Gulab Jamun from our desserts menu,true,2024-10-30,false,AllYear
+ITEM0112,Kheer,CAT11,310.00,140.73,Kheer from our desserts menu,true,2021-10-21,false,AllYear
+ITEM0113,Gajar Halwa,CAT11,510.00,198.15,Gajar Halwa from our desserts menu,true,2017-04-06,true,Winter
+ITEM0114,Kulfi,CAT11,270.00,86.95,Kulfi from our desserts menu,true,2020-06-25,true,Summer
+ITEM0115,Falooda,CAT11,580.00,186.26,Falooda from our desserts menu,true,2019-12-30,true,Summer
+ITEM0116,Molten Lava Cake,CAT11,800.00,142.86,Molten Lava Cake from our desserts menu,true,2023-07-08,false,AllYear
+ITEM0117,Tiramisu,CAT11,930.00,145.29,Tiramisu from our desserts menu,true,2019-07-02,false,AllYear
+ITEM0118,Brownie Sundae,CAT11,670.00,333.71,Brownie Sundae from our desserts menu,true,2018-12-06,false,AllYear
+ITEM0119,Shahi Tukray,CAT11,470.00,169.51,Shahi Tukray from our desserts menu,true,2016-09-17,false,AllYear
+ITEM0120,Kunafa Cheesecake,CAT11,950.00,408.90,Kunafa Cheesecake from our desserts menu,true,2025-12-01,false,AllYear
+ITEM0121,Rasmalai,CAT11,370.00,125.92,Rasmalai from our desserts menu,true,2022-09-26,false,AllYear
+ITEM0122,Chocolate Fudge Cake,CAT11,690.00,295.82,Chocolate Fudge Cake from our desserts menu,true,2016-05-14,false,AllYear
+ITEM0123,Zarda,CAT11,310.00,138.90,Zarda from our desserts menu,true,2019-11-13,false,AllYear
+ITEM0124,Doodh Patti Chai,CAT12,190.00,131.48,Doodh Patti Chai from our hot beverages menu,true,2020-04-11,false,AllYear
+ITEM0125,Kashmiri Chai,CAT12,320.00,124.33,Kashmiri Chai from our hot beverages menu,true,2020-03-08,true,Winter
+ITEM0126,Green Tea,CAT12,160.00,72.53,Green Tea from our hot beverages menu,true,2024-03-11,false,AllYear
+ITEM0127,Cappuccino,CAT12,500.00,76.86,Cappuccino from our hot beverages menu,true,2017-05-05,false,AllYear
+ITEM0128,Cafe Latte,CAT12,510.00,72.23,Cafe Latte from our hot beverages menu,true,2018-09-24,false,AllYear
+ITEM0129,Hot Chocolate,CAT12,600.00,188.49,Hot Chocolate from our hot beverages menu,true,2017-08-12,true,Winter
+ITEM0130,Karak Chai,CAT12,235.00,91.80,Karak Chai from our hot beverages menu,true,2018-03-05,true,Monsoon
+ITEM0131,Espresso,CAT12,360.00,156.93,Espresso from our hot beverages menu,false,2024-02-02,false,AllYear
+ITEM0132,Americano,CAT12,410.00,163.26,Americano from our hot beverages menu,true,2024-05-21,false,AllYear
+ITEM0133,Mint Tea,CAT12,180.00,78.35,Mint Tea from our hot beverages menu,true,2016-05-25,false,AllYear
+ITEM0134,Soft Drink (Regular),CAT13,165.00,108.74,Soft Drink (Regular) from our cold beverages & shakes menu,true,2021-08-20,false,AllYear
+ITEM0135,Mineral Water (500ml),CAT13,105.00,69.46,Mineral Water (500ml) from our cold beverages & shakes menu,true,2018-01-28,false,AllYear
+ITEM0136,Mango Shake,CAT13,480.00,175.82,Mango Shake from our cold beverages & shakes menu,true,2017-09-19,true,Summer
+ITEM0137,Sweet Lassi,CAT13,310.00,112.52,Sweet Lassi from our cold beverages & shakes menu,true,2018-08-09,true,Summer
+ITEM0138,Fresh Lime Soda,CAT13,265.00,113.51,Fresh Lime Soda from our cold beverages & shakes menu,true,2017-09-25,true,Summer
+ITEM0139,Mint Margarita,CAT13,410.00,69.54,Mint Margarita from our cold beverages & shakes menu,true,2020-05-15,false,AllYear
+ITEM0140,Blue Lagoon,CAT13,460.00,67.98,Blue Lagoon from our cold beverages & shakes menu,true,2024-11-16,false,AllYear
+ITEM0141,Cold Coffee,CAT13,510.00,166.18,Cold Coffee from our cold beverages & shakes menu,true,2021-03-25,false,AllYear
+ITEM0142,Oreo Shake,CAT13,810.00,249.91,Oreo Shake from our cold beverages & shakes menu,true,2022-06-13,false,AllYear
+ITEM0143,Strawberry Shake,CAT13,470.00,187.60,Strawberry Shake from our cold beverages & shakes menu,true,2020-05-25,false,AllYear
+ITEM0144,Lotus Biscoff Shake,CAT13,750.00,326.20,Lotus Biscoff Shake from our cold beverages & shakes menu,true,2025-11-10,false,AllYear
+ITEM0145,Peach Iced Tea,CAT13,370.00,151.19,Peach Iced Tea from our cold beverages & shakes menu,true,2025-04-15,false,AllYear
+ITEM0146,Chocolate Shake,CAT13,610.00,207.34,Chocolate Shake from our cold beverages & shakes menu,true,2018-05-25,false,AllYear
+ITEM0147,Fresh Orange Juice,CAT13,480.00,154.20,Fresh Orange Juice from our cold beverages & shakes menu,true,2018-03-04,true,Winter
+ITEM0148,Plain Fries,CAT14,320.00,208.57,Plain Fries from our sides & breads menu,true,2023-06-30,false,AllYear
+ITEM0149,Masala Fries,CAT14,380.00,173.20,Masala Fries from our sides & breads menu,true,2023-07-10,false,AllYear
+ITEM0150,Garlic Naan,CAT14,130.00,50.35,Garlic Naan from our sides & breads menu,true,2023-08-13,false,AllYear
+ITEM0151,Plain Naan,CAT14,65.00,45.19,Plain Naan from our sides & breads menu,true,2021-09-07,false,AllYear
+ITEM0152,Roghni Naan,CAT14,100.00,40.74,Roghni Naan from our sides & breads menu,true,2020-12-16,false,AllYear
+ITEM0153,Tandoori Roti,CAT14,40.00,16.47,Tandoori Roti from our sides & breads menu,true,2021-10-15,false,AllYear
+ITEM0154,Garlic Bread,CAT14,370.00,126.03,Garlic Bread from our sides & breads menu,true,2019-08-17,false,AllYear
+ITEM0155,Coleslaw,CAT14,220.00,95.85,Coleslaw from our sides & breads menu,true,2021-12-22,false,AllYear
+ITEM0156,Raita,CAT14,130.00,48.41,Raita from our sides & breads menu,true,2023-01-31,false,AllYear
+ITEM0157,Loaded Fries,CAT14,800.00,322.21,Loaded Fries from our sides & breads menu,true,2022-10-20,false,AllYear
+ITEM0158,Mashed Potatoes,CAT14,370.00,151.76,Mashed Potatoes from our sides & breads menu,false,2021-06-22,false,AllYear
+ITEM0159,Onion Rings,CAT14,460.00,192.62,Onion Rings from our sides & breads menu,true,2016-07-08,false,AllYear
+ITEM0160,Paratha,CAT14,105.00,47.30,Paratha from our sides & breads menu,true,2022-06-19,false,AllYear

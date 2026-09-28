@@ -1,0 +1,3 @@
+[2026-09-25 19:12:14] START  FPGrowth
+[2026-09-25 19:16:03] END    FPGrowth (duration 229.06s)
+[2026-09-25 19:16:18] orders=179283 multi=177108 itemsets=586 rules=449

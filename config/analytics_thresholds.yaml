@@ -1,0 +1,106 @@
+# Thresholds for spark_jobs/07-14. Changing a value changes the next run; no code edits needed.
+
+segmentation:
+  k: 6
+  seed: 42
+  # Promotion-Driven needs the cluster's mean promo order share above this.
+  promo_share_min: 0.4
+  # Customers with crc32(customer_id) % holdout_mod == 0 are held out: KMeans is fitted on the
+  # rest and only assigns them. Step 7's Python pipeline uses the same split.
+  holdout_mod: 5
+
+# Rule-based "Actual" segment for the Step 7 dual-pipeline comparison. R/F/M tertiles are
+# percentile ranks over all customers (3 = best). Rules apply in the order listed.
+segment_rules:
+  new_signup_days: 90
+  new_max_orders: 2
+  promo_share_min: 0.5
+
+market_basket:
+  # 0.01 / 0.3 gave no rules: the highest pair confidence in the data is 0.20.
+  min_support: 0.005
+  min_confidence: 0.1
+  top_rules: 20
+  # Rules below this lift are reported as weak rather than as bundle candidates.
+  bundle_min_lift: 1.2
+
+wastage:
+  # Row-level risk label: wasted / prepared above this fraction on an item x location x day.
+  # A top-quartile cut doesn't work here: 95% of rows have no waste and the 75th percentile
+  # of the rest is exactly 1.0.
+  high_risk_above: 0.10
+  demand_lookback_days: 7
+  # Rows on or after this date form the test set.
+  test_start: "2025-10-01"
+  num_trees: 50
+  max_depth: 8
+  seed: 42
+
+price:
+  window_days: 30
+  # Smaller changes (routine 2-5% inflation revisions) are dominated by demand noise.
+  min_price_change: 0.05
+  # Tertile-style cut on the percentile of |elasticity| among evaluated items.
+  low_below: 0.33
+  high_above: 0.67
+
+promotion:
+  # Relative change thresholds, 0.05 = 5%.
+  margin_per_order_drop: 0.05
+  wastage_rise: 0.10
+  post_drop: 0.05
+
+anomaly:
+  z_threshold: 3.0
+  baseline_weeks: 8
+  min_baseline_weeks: 4
+  baseline_days: 28
+  min_baseline_days: 14
+  # A week is flagged for identical ratings when one value is at least this share of
+  # at least min_ratings ratings.
+  identical_share: 0.8
+  identical_min_ratings: 10
+  # Orders above Q3 + k * IQR of total_amount.
+  order_value_iqr_k: 3.0
+
+slow_moving:
+  demand_percentile_below: 0.33
+  repeat_percentile_below: 0.33
+  # Monthly slope as a fraction of the item's average monthly quantity.
+  flat_trend_max: 0.01
+
+churn:
+  # At-risk when recency exceeds this multiple of the average inter-order gap and the
+  # last quarter's order count is below the quarter before.
+  gap_multiplier: 2.0
+
+recommendations:
+  # Priority by percentile of estimated_impact_value across all recommendations:
+  # top critical_top share = Critical, the next high_next = High, the next medium_next = Medium.
+  priority:
+    critical_top: 0.10
+    high_next: 0.20
+    medium_next: 0.40
+  # Low Performer is "persistent" when it is Low Performer at this share of its locations.
+  persistent_location_share: 0.75
+  # Share of an item's forecast days predicted high wastage risk.
+  wastage_risk_share_min: 0.5
+  # Stock before peak: forecast at least this much above the recent average, and at least
+  # min_extra_units above it, on a single item-day.
+  peak_increase_min: 0.25
+  peak_min_extra_units: 20
+  # A location-sales anomaly counts as location-specific when fewer than this many locations
+  # are flagged on the same date (more means a chain-wide event such as a holiday).
+  chain_event_min_locations: 3
+  location_anomaly_min_flags: 6
+
+what_if:
+  # Used when an item has no usable elasticity of its own (Not Evaluated or Inconclusive).
+  elasticity_defaults:
+    Highly Price Sensitive: -1.5
+    Moderately Price Sensitive: -0.7
+    Low Price Sensitivity: -0.2
+    unclassified: -0.7
+  # Measured elasticities are capped at this magnitude; single before/after windows can
+  # produce extreme values.
+  max_abs_elasticity: 3.0

@@ -1,0 +1,11 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Runtime app state (recreate with: python database/init_db.py)
+database/app.db
+
+# Local tool settings
+.claude/

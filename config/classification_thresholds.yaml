@@ -1,0 +1,30 @@
+# Menu performance classification thresholds, read by spark_jobs/05_menu_classification.py.
+# Changing a value here changes the classification on the next run; no code edits needed.
+
+# Percentile tiers: Low if percentile < low_below, High if percentile > high_above, else Medium.
+tiers:
+  low_below: 0.33
+  high_above: 0.67
+
+# Days from Menu_Items.launch_date to as_of_date below which an item is Insufficient History.
+new_item_days: 90
+
+# wastage_percentage is a fraction of portions (wasted / (wasted + sold)), so 0.05 = 5%.
+# Wastage only counts as excessive when it is both High-tier and above this floor.
+excessive_wastage_min: 0.05
+
+# Fraction of item revenue from promoted orders.
+promotion_dependent_above: 0.5
+
+# Fraction of item quantity sold on Fri/Sat/Sun.
+weekend_skewed_above: 0.55
+
+# average_rating is on a 1-5 scale.
+high_rating_min: 4.3
+low_rating_max: 3.0
+
+location:
+  # Only items sold at this many locations or more are checked for consistency.
+  min_locations: 3
+  # Share of those locations whose per-location category differs from the global one.
+  inconsistent_share: 0.25

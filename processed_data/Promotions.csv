@@ -1,0 +1,21 @@
+promotion_id,promotion_name,promotion_type,discount_value,start_date,end_date,min_order_value
+PROMO001,New Year Kickoff,PercentOff,15.00,2025-01-01,2025-01-10,1500.00
+PROMO002,Winter Warmers,PercentOff,20.00,2025-01-11,2025-02-15,
+PROMO003,Valentine Dinner Combo,ComboDeal,20.00,2025-02-10,2025-02-16,2500.00
+PROMO004,Ramadan Iftar Deal,FixedAmountOff,500.00,2025-03-01,2025-03-29,3000.00
+PROMO005,Eid Family Feast,ComboDeal,25.00,2025-03-31,2025-04-06,
+PROMO006,Spring Pizza Fest,BOGO,1.00,2025-04-15,2025-04-30,
+PROMO007,Summer Coolers,PercentOff,25.00,2025-05-01,2025-06-30,
+PROMO008,Mall Mania,PercentOff,10.00,2025-05-15,2025-06-15,
+PROMO009,Highway Traveler Deal,FixedAmountOff,300.00,2025-06-01,2025-09-30,1500.00
+PROMO010,Eid ul Adha BBQ Nights,PercentOff,15.00,2025-06-10,2025-06-18,
+PROMO011,Monsoon Munchies,FixedAmountOff,200.00,2025-07-01,2025-07-31,1000.00
+PROMO012,August BOGO Blast,BOGO,1.00,2025-08-01,2025-08-31,
+PROMO013,Independence Day 14% Off,PercentOff,14.00,2025-08-12,2025-08-16,
+PROMO014,Back to Work Lunch,FixedAmountOff,250.00,2025-09-01,2025-09-30,1200.00
+PROMO015,App Exclusive Fest,PercentOff,20.00,2025-09-15,2025-10-15,2000.00
+PROMO016,Pasta Week,PercentOff,20.00,2025-10-20,2025-10-27,
+PROMO017,Family Platter Month,ComboDeal,30.00,2025-11-01,2025-11-20,3500.00
+PROMO018,Black Friday Mega Sale,PercentOff,30.00,2025-11-27,2025-11-30,2500.00
+PROMO019,Winter Soup Season,PercentOff,15.00,2025-12-01,2025-12-31,
+PROMO020,Year End Celebration,FixedAmountOff,750.00,2025-12-20,2025-12-31,5000.00

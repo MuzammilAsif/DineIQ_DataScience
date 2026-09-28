@@ -1,0 +1,92 @@
+[2026-09-24 11:41:20] START  reload raw tables
+[2026-09-24 11:41:27] Restaurants: 25 raw rows
+[2026-09-24 11:41:28] Menu_Categories: 14 raw rows
+[2026-09-24 11:41:29] Menu_Items: 160 raw rows
+[2026-09-24 11:41:30] Pricing_History: 959 raw rows
+[2026-09-24 11:41:31] Customers: 55000 raw rows
+[2026-09-24 11:41:32] Promotions: 20 raw rows
+[2026-09-24 11:41:32] Promotion_Items: 1316 raw rows
+[2026-09-24 11:41:33] Promotion_Locations: 424 raw rows
+[2026-09-24 11:41:35] Orders: 196547 raw rows
+[2026-09-24 11:41:39] Order_Items: 1070114 raw rows
+[2026-09-24 11:41:39] Ratings: 105000 raw rows
+[2026-09-24 11:41:44] Inventory: 1251246 raw rows
+[2026-09-24 11:41:45] Wastage: 60290 raw rows
+[2026-09-24 11:41:45] END    reload raw tables (duration 25.39s)
+[2026-09-24 11:41:45] START  clean Menu_Items
+[2026-09-24 11:41:49] Menu_Items cleaned: 160 rows
+[2026-09-24 11:41:51] END    clean Menu_Items (duration 5.96s)
+[2026-09-24 11:41:51] START  clean Pricing_History
+[2026-09-24 11:41:53] Pricing_History: quarantined 14 rows for 'invalid_price'
+[2026-09-24 11:41:54] Pricing_History cleaned: 945 rows
+[2026-09-24 11:41:57] wrote quarantined Pricing_History -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/quarantine/Pricing_History.csv
+[2026-09-24 11:41:57] END    clean Pricing_History (duration 5.73s)
+[2026-09-24 11:41:57] START  clean Customers
+[2026-09-24 11:41:59] Customers: quarantined 275 rows for 'invalid_date'
+[2026-09-24 11:41:59] Customers: quarantined 275 rows for 'invalid_location_reference'
+[2026-09-24 11:42:01] Customers cleaned: 54450 rows
+[2026-09-24 11:42:03] wrote quarantined Customers -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/quarantine/Customers.csv
+[2026-09-24 11:42:03] END    clean Customers (duration 5.91s)
+[2026-09-24 11:42:03] START  clean Orders
+[2026-09-24 11:42:06] Orders: dropped 1946 duplicate rows (key=['order_id'])
+[2026-09-24 11:42:12] Orders: quarantined 2902 rows for 'orphan_foreign_key'
+[2026-09-24 11:42:12] Orders: quarantined 973 rows for 'invalid_date'
+[2026-09-24 11:42:12] Orders: quarantined 579 rows for 'invalid_restaurant_id'
+[2026-09-24 11:42:12] Orders: quarantined 973 rows for 'discount_exceeds_subtotal'
+[2026-09-24 11:42:12] Orders: quarantined 1946 rows for 'missing_value'
+[2026-09-24 11:42:18] Orders cleaned: 187228 rows
+[2026-09-24 11:42:21] wrote quarantined Orders -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/quarantine/Orders.csv
+[2026-09-24 11:42:21] END    clean Orders (duration 17.98s)
+[2026-09-24 11:42:21] START  clean Order_Items
+[2026-09-24 11:42:26] Order_Items: dropped 10663 duplicate rows (key=['order_id', 'item_id'])
+[2026-09-24 11:43:00] Order_Items: quarantined 45887 rows for 'orphan_foreign_key'
+[2026-09-24 11:43:00] Order_Items: quarantined 212 rows for 'invalid_price'
+[2026-09-24 11:43:00] Order_Items: quarantined 5298 rows for 'negative_quantity'
+[2026-09-24 11:43:00] Order_Items: quarantined 5230 rows for 'missing_value'
+[2026-09-24 11:43:25] Order_Items cleaned: 1002824 rows
+[2026-09-24 11:43:54] wrote quarantined Order_Items -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/quarantine/Order_Items.csv
+[2026-09-24 11:43:54] END    clean Order_Items (duration 92.90s)
+[2026-09-24 11:43:54] START  clean Ratings
+[2026-09-24 11:43:59] Ratings: quarantined 4204 rows for 'orphan_foreign_key'
+[2026-09-24 11:43:59] Ratings: quarantined 525 rows for 'invalid_date'
+[2026-09-24 11:43:59] Ratings: quarantined 525 rows for 'invalid_restaurant_id'
+[2026-09-24 11:43:59] Ratings: quarantined 1575 rows for 'missing_value'
+[2026-09-24 11:43:59] Ratings: quarantined 1050 rows for 'invalid_rating'
+[2026-09-24 11:44:02] Ratings cleaned: 97121 rows
+[2026-09-24 11:44:06] wrote quarantined Ratings -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/quarantine/Ratings.csv
+[2026-09-24 11:44:06] END    clean Ratings (duration 12.44s)
+[2026-09-24 11:44:06] START  clean Inventory
+[2026-09-24 11:44:11] Inventory: quarantined 3754 rows for 'orphan_foreign_key'
+[2026-09-24 11:44:15] Inventory cleaned: 1247492 rows
+[2026-09-24 11:44:19] wrote quarantined Inventory -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/quarantine/Inventory.csv
+[2026-09-24 11:44:19] END    clean Inventory (duration 13.29s)
+[2026-09-24 11:44:19] START  clean Wastage
+[2026-09-24 11:44:34] Wastage: quarantined 301 rows for 'invalid_date'
+[2026-09-24 11:44:34] Wastage: quarantined 301 rows for 'invalid_restaurant_id'
+[2026-09-24 11:44:34] Wastage: quarantined 301 rows for 'missing_value'
+[2026-09-24 11:44:34] Wastage: quarantined 600 rows for 'wastage_exceeds_prepared'
+[2026-09-24 11:44:45] Wastage cleaned: 58787 rows
+[2026-09-24 11:44:57] wrote quarantined Wastage -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/quarantine/Wastage.csv
+[2026-09-24 11:44:57] END    clean Wastage (duration 37.26s)
+[2026-09-24 11:44:57] START  write cleaned outputs
+[2026-09-24 11:44:57] wrote cleaned Restaurants -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Restaurants.csv
+[2026-09-24 11:44:58] wrote cleaned Menu_Categories -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Menu_Categories.csv
+[2026-09-24 11:44:58] wrote cleaned Promotions -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Promotions.csv
+[2026-09-24 11:44:59] wrote cleaned Promotion_Items -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Promotion_Items.csv
+[2026-09-24 11:44:59] wrote cleaned Promotion_Locations -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Promotion_Locations.csv
+[2026-09-24 11:45:00] wrote cleaned Menu_Items -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Menu_Items.csv
+[2026-09-24 11:45:00] wrote cleaned Pricing_History -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Pricing_History.csv
+[2026-09-24 11:45:01] wrote cleaned Customers -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Customers.csv
+[2026-09-24 11:45:04] wrote cleaned Orders -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Orders.csv
+[2026-09-24 11:45:15] wrote cleaned Order_Items -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Order_Items.csv
+[2026-09-24 11:45:16] wrote cleaned Ratings -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Ratings.csv
+[2026-09-24 11:45:31] wrote cleaned Inventory -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Inventory.csv
+[2026-09-24 11:45:32] wrote cleaned Wastage -> /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/processed_data/Wastage.csv
+[2026-09-24 11:45:32] END    write cleaned outputs (duration 35.58s)
+[2026-09-24 11:45:32] START  write cleaning log
+[2026-09-24 11:45:33] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/reports/cleaning_log.csv with 65307 entries
+[2026-09-24 11:45:33] END    write cleaning log (duration 0.56s)
+[2026-09-24 11:45:33] START  write before/after row counts
+[2026-09-24 11:45:33] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/reports/cleaning_row_counts.csv
+[2026-09-24 11:45:33] END    write before/after row counts (duration 0.01s)
+[2026-09-24 11:45:33] cleaning job complete

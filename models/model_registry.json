@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-09-25T20:55:48",
+  "models": [
+    {
+      "model": "Menu classification",
+      "pipeline": "Spark MLlib",
+      "algorithm": "RandomForestClassifier",
+      "version": "v20260925_184004",
+      "trained_at": "2026-09-25T18:40:04",
+      "key_metric": "test macro F1",
+      "value": 0.9140222096743835,
+      "path": "models/spark/menu_classification/v20260925_184004/model"
+    },
+    {
+      "model": "Menu classification",
+      "pipeline": "Python (scikit-learn)",
+      "algorithm": "LogisticRegression",
+      "version": "v20260925_195926",
+      "trained_at": "2026-09-25T19:59:26",
+      "key_metric": "test macro F1",
+      "value": 0.9347222222222222,
+      "path": "models/python/menu_classification/v20260925_195926/model.joblib"
+    },
+    {
+      "model": "Customer segmentation",
+      "pipeline": "Spark MLlib",
+      "algorithm": "KMeans",
+      "version": "as_of_date=2025-12-31",
+      "trained_at": "2026-09-25T19:58:38",
+      "key_metric": "holdout agreement with rule-based segment",
+      "value": 0.6395595514698454,
+      "path": "models/spark/customer_segmentation/as_of_date=2025-12-31"
+    },
+    {
+      "model": "Customer segmentation",
+      "pipeline": "Python (scikit-learn)",
+      "algorithm": "sklearn KMeans",
+      "version": "v20260925_200124",
+      "trained_at": "2026-09-25T20:01:24",
+      "key_metric": "holdout agreement with rule-based segment",
+      "value": 0.6469340337407818,
+      "path": "models/python/customer_segmentation/v20260925_200124/model.joblib"
+    },
+    {
+      "model": "Demand forecast",
+      "pipeline": "Spark MLlib",
+      "algorithm": "GBTRegressor",
+      "version": "v20260925_204144",
+      "trained_at": "2026-09-25T20:41:44",
+      "key_metric": "test MAE, item x location x day (baseline 1.588)",
+      "value": 1.3527168994087564,
+      "path": "models/spark/demand_forecast/v20260925_204144/model"
+    },
+    {
+      "model": "Wastage risk",
+      "pipeline": "Spark MLlib",
+      "algorithm": "RandomForestClassifier",
+      "version": "v20260925_192941",
+      "trained_at": "2026-09-25T19:29:41",
+      "key_metric": "test PR AUC",
+      "value": 0.22890842005823764,
+      "path": "models/spark/wastage_risk/v20260925_192941/model"
+    }
+  ]
+}

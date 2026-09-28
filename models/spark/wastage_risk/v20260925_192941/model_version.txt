@@ -1,0 +1,37 @@
+{
+  "version": "v20260925_192941",
+  "algorithm": "RandomForestClassifier",
+  "features": [
+    "prepared_quantity",
+    "recent_demand",
+    "prep_to_demand",
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "promo_active",
+    "item_popularity",
+    "location_idx",
+    "category_idx"
+  ],
+  "item_snapshot": "2025-09-30",
+  "high_risk_above": 0.1,
+  "demand_lookback_days": 7,
+  "test_start": "2025-10-01",
+  "num_trees": 50,
+  "max_depth": 8,
+  "seed": 42,
+  "metrics": {
+    "n": 318056,
+    "tp": 6044,
+    "fp": 20418,
+    "fn": 7234,
+    "tn": 284360,
+    "accuracy": 0.9130593354629374,
+    "precision": 0.22840299297105282,
+    "recall": 0.45518903449314657,
+    "f1": 0.30417715148465024,
+    "auc_roc": 0.7626269408130956,
+    "auc_pr": 0.22890842005823764,
+    "positive_rate": 0.04174736524385643
+  }
+}

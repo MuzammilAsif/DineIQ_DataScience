@@ -1,0 +1,73 @@
+Generating DineIQ dataset (scale=1.0, seed=42)
+  Restaurants                                 0.1s
+  Menu_Categories, Menu_Items                 0.0s
+  Pricing_History                             0.1s
+  Customers                                   0.2s
+  Promotions and bridge tables                0.0s
+  Orders (skeleton)                           0.4s
+  Order_Items and order totals                2.0s
+  Ratings                                     0.5s
+  Inventory and Wastage                       3.9s
+  Dirty-data injection                        2.0s
+  Write CSVs                                 18.2s
+
+Row counts
+              table    rows  columns
+        Restaurants      25       10
+    Menu_Categories      14        3
+         Menu_Items     160       10
+    Pricing_History     959        8
+          Customers   55000        7
+         Promotions      20        7
+    Promotion_Items    1316        2
+Promotion_Locations     424        2
+             Orders  196547       12
+        Order_Items 1070114        8
+            Ratings  105000        8
+          Inventory 1251246       10
+            Wastage   60290        8
+
+Columns with nulls (%)
+          table             column  null_pct
+Pricing_History        location_id    47.445
+Pricing_History effective_end_date    41.814
+      Customers   home_location_id     8.113
+     Promotions    min_order_value    50.000
+         Orders        customer_id     0.990
+         Orders       promotion_id    82.162
+    Order_Items            item_id     0.495
+        Ratings            item_id    15.000
+        Ratings       rating_value     1.500
+        Ratings        review_text    65.277
+        Wastage            item_id     0.499
+
+Injected dirtiness
+          table                      rule           column  rows_affected  table_rows  pct_of_table
+      Customers              invalid_date      signup_date            275       55000         0.500
+      Customers        orphan_foreign_key home_location_id            275       55000         0.500
+     Menu_Items             invalid_price       base_price              3         160         1.875
+Pricing_History             invalid_price            price             14         959         1.460
+         Orders             missing_value      customer_id           1946      196547         0.990
+         Orders        orphan_foreign_key      customer_id            973      196547         0.495
+         Orders        orphan_foreign_key      location_id            584      196547         0.297
+         Orders              invalid_date   order_datetime            973      196547         0.495
+         Orders discount_exceeds_subtotal  discount_amount            973      196547         0.495
+         Orders             duplicate_row                            1946      196547         0.990
+    Order_Items             missing_value          item_id           5298     1070114         0.495
+    Order_Items         negative_quantity         quantity           5298     1070114         0.495
+    Order_Items             invalid_price       unit_price           3179     1070114         0.297
+    Order_Items        orphan_foreign_key         order_id           3179     1070114         0.297
+    Order_Items        orphan_foreign_key          item_id           3179     1070114         0.297
+    Order_Items             duplicate_row                           10595     1070114         0.990
+        Ratings             missing_value     rating_value           1575      105000         1.500
+        Ratings       rating_out_of_range     rating_value           1050      105000         1.000
+        Ratings              invalid_date      rating_date            525      105000         0.500
+        Ratings        orphan_foreign_key      location_id            525      105000         0.500
+        Ratings        orphan_foreign_key      customer_id            315      105000         0.300
+      Inventory         inconsistent_unit             unit          12512     1251246         1.000
+      Inventory        orphan_foreign_key          item_id           3754     1251246         0.300
+        Wastage  wastage_exceeds_prepared  quantity_wasted            603       60290         1.000
+        Wastage         inconsistent_unit             unit           1206       60290         2.000
+        Wastage              invalid_date             date            301       60290         0.499
+        Wastage             missing_value          item_id            301       60290         0.499
+        Wastage        orphan_foreign_key      location_id            301       60290         0.499

@@ -1,0 +1,20 @@
+# Demand forecasting settings, read by spark_jobs/15_demand_forecasting.py.
+
+# A row is a forecast made on origin_date with data up to the day before. horizon_days is how
+# many days ahead the target is: 1 = the origin day itself, 7 = the 7th day from origin.
+horizon_days: 7
+
+# Lag features: quantity sold this many days before origin_date.
+lags: [1, 7, 14]
+# Trailing means over this many days before origin_date. A window must be complete.
+rolling_windows: [7, 14]
+
+# The last test_days target dates are the held-out test set; everything earlier trains.
+test_days: 45
+
+gbt:
+  max_iter: 40
+  max_depth: 6
+  step_size: 0.1
+  subsampling_rate: 0.8
+  seed: 42

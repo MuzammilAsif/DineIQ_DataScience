@@ -1,0 +1,26 @@
+[2026-09-24 22:56:10] START  attach order-level basket_size to fact_order_line
+[2026-09-24 22:56:31] rewrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/fact_order_line with basket_size
+[2026-09-24 22:56:31] END    attach order-level basket_size to fact_order_line (duration 20.83s)
+[2026-09-24 22:56:31] START  load fact, orders, wastage and dimension tables
+[2026-09-24 22:56:40] fact_order_line: 1002824 rows, orders: 187228 rows
+[2026-09-24 22:56:40] END    load fact, orders, wastage and dimension tables (duration 9.04s)
+[2026-09-24 22:56:42] snapshots: ['2025-12-31', '2025-09-30']
+[2026-09-24 22:56:45] START  item_features as_of_date=2025-12-31
+[2026-09-24 22:56:59] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/features/item_features/as_of_date=2025-12-31 (160 rows)
+[2026-09-24 22:56:59] END    item_features as_of_date=2025-12-31 (duration 13.90s)
+[2026-09-24 22:56:59] START  customer_features as_of_date=2025-12-31
+[2026-09-24 22:57:04] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/features/customer_features/as_of_date=2025-12-31 (49606 rows)
+[2026-09-24 22:57:04] END    customer_features as_of_date=2025-12-31 (duration 4.81s)
+[2026-09-24 22:57:04] START  location_features as_of_date=2025-12-31
+[2026-09-24 22:57:08] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/features/location_features/as_of_date=2025-12-31 (25 rows)
+[2026-09-24 22:57:08] END    location_features as_of_date=2025-12-31 (duration 3.89s)
+[2026-09-24 22:57:10] START  item_features as_of_date=2025-09-30
+[2026-09-24 22:57:18] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/features/item_features/as_of_date=2025-09-30 (154 rows)
+[2026-09-24 22:57:18] END    item_features as_of_date=2025-09-30 (duration 7.61s)
+[2026-09-24 22:57:18] START  customer_features as_of_date=2025-09-30
+[2026-09-24 22:57:22] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/features/customer_features/as_of_date=2025-09-30 (38317 rows)
+[2026-09-24 22:57:22] END    customer_features as_of_date=2025-09-30 (duration 3.85s)
+[2026-09-24 22:57:22] START  location_features as_of_date=2025-09-30
+[2026-09-24 22:57:25] wrote /home/muzammil/Desktop/Techwiz 7/Data science/DineIQ/parquet_data/features/location_features/as_of_date=2025-09-30 (25 rows)
+[2026-09-24 22:57:25] END    location_features as_of_date=2025-09-30 (duration 3.68s)
+[2026-09-24 22:57:25] feature engineering job complete

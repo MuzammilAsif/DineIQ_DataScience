@@ -1,0 +1,15 @@
+price_id,item_id,location_id,price,cost,effective_start_date,effective_end_date,change_reason,quarantine_reason
+PRC00165,ITEM0031,LOC0018,0.00,364.08,2025-03-10,2025-03-30,location premium,invalid_price
+PRC00235,ITEM0044,LOC0018,-1600.00,512.67,2025-09-01,,location premium,invalid_price
+PRC00245,ITEM0046,,-2740.00,1088.75,2025-02-01,2025-08-31,inflation,invalid_price
+PRC00251,ITEM0047,LOC0009,0.00,627.28,2025-03-01,,location premium,invalid_price
+PRC00258,ITEM0048,,0.00,597.64,2025-09-01,,inflation,invalid_price
+PRC00317,ITEM0053,LOC0024,0.00,578.78,2025-03-01,2025-08-31,location premium,invalid_price
+PRC00410,ITEM0061,LOC0014,0.00,363.74,2025-03-15,,location premium,invalid_price
+PRC00440,ITEM0070,,-1330.00,627.42,2025-05-01,,promotion-adjustment,invalid_price
+PRC00607,ITEM0100,,0.00,549.26,2025-02-01,,inflation,invalid_price
+PRC00622,ITEM0102,LOC0009,0.00,625.27,2025-11-01,,location premium,invalid_price
+PRC00667,ITEM0106,,0.00,1825.61,2025-09-01,,inflation,invalid_price
+PRC00769,ITEM0128,,-480.00,65.96,2024-07-01,2025-03-14,menu revision,invalid_price
+PRC00810,ITEM0134,,0.00,97.79,2024-07-01,2025-01-31,menu revision,invalid_price
+PRC00891,ITEM0148,,-300.00,200.34,2024-07-01,2025-03-14,menu revision,invalid_price

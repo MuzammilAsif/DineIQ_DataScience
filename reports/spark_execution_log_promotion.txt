@@ -1,0 +1,23 @@
+[2026-09-25 19:30:03] START  promotion windows
+[2026-09-25 19:30:34] END    promotion windows (duration 30.96s)
+[2026-09-25 19:30:35]    promotion_id volume_up_margin_down customers_up_margin_per_order_down wastage_up post_promo_drop
+0      PROMO001                  None                               None       None            None
+1      PROMO002                  None                               None       None            None
+2      PROMO003                 False                              False      False           False
+3      PROMO004                 False                              False       True           False
+4      PROMO005                 False                              False      False           False
+5      PROMO006                  True                               True       True            True
+6      PROMO007                 False                              False       True           False
+7      PROMO008                 False                              False       True            True
+8      PROMO009                 False                              False       True            None
+9      PROMO010                 False                              False       True           False
+10     PROMO011                 False                              False       True           False
+11     PROMO012                 False                               True       True           False
+12     PROMO013                 False                              False       True            True
+13     PROMO014                  True                              False       True            True
+14     PROMO015                 False                              False      False            True
+15     PROMO016                 False                               True       True           False
+16     PROMO017                 False                              False      False           False
+17     PROMO018                 False                               True       True           False
+18     PROMO019                 False                              False       True            None
+19     PROMO020                 False                              False       True            None
