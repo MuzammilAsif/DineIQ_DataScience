@@ -1,4 +1,4 @@
-/* DineIQ shared styles. White/red, no motion. */
+/* DineIQ shared styles. White/red, with short hover and update transitions. */
 :root {
   --dq-red: #C8102E;
   --dq-ink: #1A1A1A;
@@ -7,8 +7,17 @@
   --dq-green: #2E7D32;
 }
 
-*, *::before, *::after { transition: none !important; }
-[data-stale="true"], .stale-element { opacity: 1 !important; }
+/* While a rerun is in flight, dim the elements about to change, then fade them back in.
+   Replaces Streamlit's default (1s fade after a 0.5s delay) so quick filter changes show. */
+[data-testid="stElementContainer"] { transition: opacity 180ms ease !important; }
+[data-testid="stElementContainer"][data-stale="true"] { opacity: 0.55 !important; }
+
+/* Streamlit rebuilds a chart or table whenever its data changes (a filter change), so a
+   fade-in on mount plays exactly on those updates. Plotly's layout.transition can't be
+   used: the chart is remounted, not updated in place. Opacity only, so hover and zoom
+   positions are never offset. */
+@keyframes dq-fade-in { from { opacity: 0; } to { opacity: 1; } }
+.js-plotly-plot .svg-container, [data-testid="stDataFrame"] { animation: dq-fade-in 280ms ease-out; }
 
 h1 { font-weight: 700 !important; letter-spacing: -0.01em; }
 h3 { font-weight: 600 !important; font-size: 1.15rem !important; margin-top: 0.8rem !important; }
@@ -98,4 +107,53 @@ div[data-testid="stAlert"]:has([data-testid="stAlertContentInfo"]) > div {
   background: #FFFFFF;
   border: 1px solid var(--dq-border);
   border-left: 3px solid var(--dq-ink);
+}
+
+/* Hover motion: short and subtle. Tiles and cards lift; chart cards only gain a shadow
+   so a chart never moves under the cursor while zooming or panning. */
+.dq-kpi, .dq-card,
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] [data-testid="stPlotlyChart"]) {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.dq-kpi:hover, .dq-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 26, 26, 0.08);
+  border-color: #D0D0D0;
+}
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] [data-testid="stPlotlyChart"]):hover {
+  box-shadow: 0 4px 14px rgba(26, 26, 26, 0.07);
+}
+
+[data-testid="stButton"] button,
+[data-testid="stDownloadButton"] button,
+[data-testid="stFormSubmitButton"] button {
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease,
+              color 150ms ease, background-color 150ms ease;
+}
+[data-testid="stButton"] button:hover,
+[data-testid="stDownloadButton"] button:hover,
+[data-testid="stFormSubmitButton"] button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(200, 16, 46, 0.15);
+}
+[data-testid="stButton"] button:active,
+[data-testid="stDownloadButton"] button:active,
+[data-testid="stFormSubmitButton"] button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+[data-testid="stSidebarNavLink"] { transition: background-color 150ms ease; }
+[data-testid="stSidebarNavLink"] span { transition: color 150ms ease, transform 150ms ease; }
+[data-testid="stSidebarNavLink"]:hover { background: #F2F2F2; }
+[data-testid="stSidebarNavLink"]:hover span { color: var(--dq-red) !important; }
+[data-testid="stSidebarNavLink"]:not([aria-current="page"]):hover > span:last-child {
+  transform: translateX(2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  .dq-kpi:hover, .dq-card:hover, button:hover, [data-testid="stSidebarNavLink"] span {
+    transform: none !important;
+  }
 }
